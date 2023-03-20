@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.rsocket.DefaultMetadataExtractorTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:32:38" hostname="DESKTOP-VGJP1PJ" time="0.151">
+  <properties/>
+  <testcase name="routeWithCustomFormatting()" classname="org.springframework.messaging.rsocket.DefaultMetadataExtractorTests" time="0.067"/>
+  <testcase name="route()" classname="org.springframework.messaging.rsocket.DefaultMetadataExtractorTests" time="0.016"/>
+  <testcase name="compositeMetadataWithMimeTypeRegistrations()" classname="org.springframework.messaging.rsocket.DefaultMetadataExtractorTests" time="0.058"/>
+  <testcase name="nonCompositeMetadataCanBeReadTwice()" classname="org.springframework.messaging.rsocket.DefaultMetadataExtractorTests" time="0.001"/>
+  <testcase name="compositeMetadataWithDefaultSettings()" classname="org.springframework.messaging.rsocket.DefaultMetadataExtractorTests" time="0.003"/>
+  <testcase name="routeAsText()" classname="org.springframework.messaging.rsocket.DefaultMetadataExtractorTests" time="0.001"/>
+  <testcase name="noDecoder()" classname="org.springframework.messaging.rsocket.DefaultMetadataExtractorTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

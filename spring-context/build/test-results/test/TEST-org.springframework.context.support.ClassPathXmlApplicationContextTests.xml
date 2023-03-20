@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.context.support.ClassPathXmlApplicationContextTests" tests="20" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:17:56" hostname="DESKTOP-VGJP1PJ" time="4.608">
+  <properties/>
+  <testcase name="testSingleConfigLocationWithClass()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.006"/>
+  <testcase name="testAliasWithPlaceholder()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="1.108"/>
+  <testcase name="testContextWithInvalidValueType()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.02"/>
+  <testcase name="testResourceAndInputStream()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.035"/>
+  <testcase name="testContextWithInvalidLazyClass()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.036"/>
+  <testcase name="testMessageSourceAware()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.373"/>
+  <testcase name="testContextWithClassNameThatContainsPlaceholder()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.014"/>
+  <testcase name="testGenericApplicationContextWithXmlBeanDefinitionsAndClassLoaderNull()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.298"/>
+  <testcase name="testAliasThatOverridesParent()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.01"/>
+  <testcase name="testChildWithProxy()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.298"/>
+  <testcase name="testSingleConfigLocation()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.004"/>
+  <testcase name="testResourceArrayPropertyEditor()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.273"/>
+  <testcase name="testGenericApplicationContextWithXmlBeanDefinitionsAndSpecifiedId()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.286"/>
+  <testcase name="testFactoryBeanAndApplicationListener()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.237"/>
+  <testcase name="testMultipleConfigLocationsWithClass()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.216"/>
+  <testcase name="testMultipleConfigLocations()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.826"/>
+  <testcase name="testAliasForParentContext()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.008"/>
+  <testcase name="testGenericApplicationContextWithXmlBeanDefinitions()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.33"/>
+  <testcase name="testAliasThatOverridesEarlierBean()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.006"/>
+  <testcase name="testConfigLocationPattern()" classname="org.springframework.context.support.ClassPathXmlApplicationContextTests" time="0.215"/>
+  <system-out><![CDATA[02:17:57.223 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'someMessageSource' defined in class path resource [org/springframework/context/support/invalidValueType.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'boolean' for property 'useCodeAsDefaultMessage'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value [xxx]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

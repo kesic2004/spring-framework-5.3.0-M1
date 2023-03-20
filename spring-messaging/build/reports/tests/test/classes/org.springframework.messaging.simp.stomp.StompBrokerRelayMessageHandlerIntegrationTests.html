@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - StompBrokerRelayMessageHandlerIntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>StompBrokerRelayMessageHandlerIntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.simp.stomp.html">org.springframework.messaging.simp.stomp</a> &gt; StompBrokerRelayMessageHandlerIntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">29.613s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">brokerAvailabilityEventWhenStopped()</td>
+<td class="success">4.165s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">brokerBecomingUnavailableTriggersErrorFrame()</td>
+<td class="success">4.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">disconnectWithReceipt()</td>
+<td class="success">4.168s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">messageDeliveryExceptionIfSystemSessionForwardFails()</td>
+<td class="success">4.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">publishSubscribe()</td>
+<td class="success">4.051s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">relayReconnectsIfBrokerComesBackUp()</td>
+<td class="success">9.022s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>02:32:49.209 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:32:49.210 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:2) is starting
+02:32:49.211 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:65366
+02:32:49.212 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:65366 Started
+02:32:49.212 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:2) started
+02:32:49.212 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:32:49.236 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:2) is shutting down
+02:32:51.248 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:65366 Stopped
+02:32:51.249 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:2) uptime 2.040 seconds
+02:32:51.249 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:2) is shutdown
+02:32:53.311 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:32:53.311 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:3) is starting
+02:32:53.312 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:62305
+02:32:53.312 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:62305 Started
+02:32:53.313 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:3) started
+02:32:53.313 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:32:55.435 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:3) is shutting down
+02:32:57.356 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:62305 Stopped
+02:32:57.358 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:3) uptime 4.046 seconds
+02:32:57.359 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:3) is shutdown
+02:32:57.362 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:32:57.365 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:4) is starting
+02:32:57.366 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:64698
+02:32:57.367 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64698 Started
+02:32:57.368 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:4) started
+02:32:57.368 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:32:57.436 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:4) is shutting down
+02:32:59.435 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64698 Stopped
+02:32:59.435 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:4) uptime 2.073 seconds
+02:32:59.436 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:4) is shutdown
+02:33:01.526 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:33:01.527 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:5) is starting
+02:33:01.527 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:61793
+02:33:01.528 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:61793 Started
+02:33:01.529 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:5) started
+02:33:01.529 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:33:01.601 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:5) is shutting down
+02:33:03.658 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:61793 Stopped
+02:33:03.658 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:5) uptime 2.132 seconds
+02:33:03.658 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:5) is shutdown
+02:33:03.659 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:33:03.659 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:6) is starting
+02:33:03.659 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:61793
+02:33:03.660 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:61793 Started
+02:33:03.660 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:6) started
+02:33:03.660 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:33:08.596 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:6) is shutting down
+02:33:10.545 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:61793 Stopped
+02:33:10.546 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:6) uptime 6.887 seconds
+02:33:10.546 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:6) is shutdown
+02:33:10.548 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:33:10.549 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:7) is starting
+02:33:10.549 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:65217
+02:33:10.550 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:65217 Started
+02:33:10.550 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:7) started
+02:33:10.550 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:33:10.588 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:7) is shutting down
+02:33:12.600 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:65217 Stopped
+02:33:12.600 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:7) uptime 2.052 seconds
+02:33:12.600 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:7) is shutdown
+02:33:14.656 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:33:14.657 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:8) is starting
+02:33:14.657 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:61931
+02:33:14.678 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:61931 Started
+02:33:14.679 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:8) started
+02:33:14.679 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:33:16.890 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:8) is shutting down
+02:33:18.818 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:61931 Stopped
+02:33:18.818 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:8) uptime 4.162 seconds
+02:33:18.818 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:8) is shutdown
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5</a> at Mar 6, 2023 2:33:36 AM</p>
+</div>
+</div>
+</body>
+</html>

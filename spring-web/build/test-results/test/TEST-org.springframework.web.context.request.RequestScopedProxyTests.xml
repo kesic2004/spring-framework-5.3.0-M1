@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.RequestScopedProxyTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:05" hostname="DESKTOP-VGJP1PJ" time="0.493">
+  <properties/>
+  <testcase name="testGetAnonymousInnerBeanFromScope()" classname="org.springframework.web.context.request.RequestScopedProxyTests" time="0.247"/>
+  <testcase name="testGetInnerBeanFromScope()" classname="org.springframework.web.context.request.RequestScopedProxyTests" time="0.043"/>
+  <testcase name="testGetFromFactoryBeanInScope()" classname="org.springframework.web.context.request.RequestScopedProxyTests" time="0.037"/>
+  <testcase name="testGetFromScopeThroughDynamicProxy()" classname="org.springframework.web.context.request.RequestScopedProxyTests" time="0.031"/>
+  <testcase name="scopeNotAvailable()" classname="org.springframework.web.context.request.RequestScopedProxyTests" time="0.044"/>
+  <testcase name="testGetFromScope()" classname="org.springframework.web.context.request.RequestScopedProxyTests" time="0.04"/>
+  <testcase name="testDestructionAtRequestCompletion()" classname="org.springframework.web.context.request.RequestScopedProxyTests" time="0.05"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

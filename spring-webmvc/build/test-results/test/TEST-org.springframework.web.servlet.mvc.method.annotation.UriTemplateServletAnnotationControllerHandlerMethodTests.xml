@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" tests="36" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:13:48" hostname="DESKTOP-VGJP1PJ" time="1.338">
+  <properties/>
+  <testcase name="customRegex(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.03"/>
+  <testcase name="customRegex(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.03"/>
+  <testcase name="simple(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.047"/>
+  <testcase name="simple(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.033"/>
+  <testcase name="extension(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.024"/>
+  <testcase name="extension(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.025"/>
+  <testcase name="menuTree(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.034"/>
+  <testcase name="menuTree(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.049"/>
+  <testcase name="relative(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.035"/>
+  <testcase name="relative(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.029"/>
+  <testcase name="binding(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.098"/>
+  <testcase name="binding(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.067"/>
+  <testcase name="implicitSubPath(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.038"/>
+  <testcase name="implicitSubPath(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.056"/>
+  <testcase name="crud(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.077"/>
+  <testcase name="crud(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.024"/>
+  <testcase name="doIt(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.05"/>
+  <testcase name="doIt(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.021"/>
+  <testcase name="multiple(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.032"/>
+  <testcase name="multiple(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.02"/>
+  <testcase name="pathVarsInModel(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.058"/>
+  <testcase name="pathVarsInModel(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.031"/>
+  <testcase name="multiPaths(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.026"/>
+  <testcase name="multiPaths(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.024"/>
+  <testcase name="typeConversionError(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.033"/>
+  <testcase name="typeConversionError(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.038"/>
+  <testcase name="explicitSubPath(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.019"/>
+  <testcase name="explicitSubPath(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.019"/>
+  <testcase name="variableNames(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.061"/>
+  <testcase name="variableNames(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.03"/>
+  <testcase name="ambiguous(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.031"/>
+  <testcase name="ambiguous(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.029"/>
+  <testcase name="methodNotSupported(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.024"/>
+  <testcase name="methodNotSupported(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.02"/>
+  <testcase name="variableNamesWithUrlExtension(boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.02"/>
+  <testcase name="variableNamesWithUrlExtension(boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.UriTemplateServletAnnotationControllerHandlerMethodTests" time="0.02"/>
+  <system-out><![CDATA[03:13:48.663 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is java.lang.IllegalArgumentException: Could not parse date: Unparseable date: "2008-foo-bar"]
+03:13:48.728 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.util.Date': no matching editors or conversion strategy found]
+03:13:48.767 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is java.lang.IllegalArgumentException: Could not parse date: Unparseable date: "2008-foo-bar"]
+03:13:48.797 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'java.util.Date': no matching editors or conversion strategy found]
+03:13:49.299 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "foo.xml"]
+03:13:49.337 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "foo.xml"]
+03:13:49.560 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+03:13:49.561 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+03:13:49.581 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+03:13:49.582 [Test worker] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

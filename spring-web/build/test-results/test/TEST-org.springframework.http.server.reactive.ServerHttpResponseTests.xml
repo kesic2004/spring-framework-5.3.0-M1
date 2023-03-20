@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.server.reactive.ServerHttpResponseTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:30:57" hostname="DESKTOP-VGJP1PJ" time="0.007">
+  <properties/>
+  <testcase name="writeWith()" classname="org.springframework.http.server.reactive.ServerHttpResponseTests" time="0.001"/>
+  <testcase name="writeWithMonoError()" classname="org.springframework.http.server.reactive.ServerHttpResponseTests" time="0.0"/>
+  <testcase name="writeAndFlushWithFluxOfDefaultDataBuffer()" classname="org.springframework.http.server.reactive.ServerHttpResponseTests" time="0.001"/>
+  <testcase name="writeWithFluxError()" classname="org.springframework.http.server.reactive.ServerHttpResponseTests" time="0.0"/>
+  <testcase name="beforeCommitErrorShouldLeaveResponseNotCommitted()" classname="org.springframework.http.server.reactive.ServerHttpResponseTests" time="0.001"/>
+  <testcase name="beforeCommitWithComplete()" classname="org.springframework.http.server.reactive.ServerHttpResponseTests" time="0.001"/>
+  <testcase name="beforeCommitActionWithSetComplete()" classname="org.springframework.http.server.reactive.ServerHttpResponseTests" time="0.001"/>
+  <testcase name="setComplete()" classname="org.springframework.http.server.reactive.ServerHttpResponseTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

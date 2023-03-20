@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.ModelInitializerTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:14:57" hostname="DESKTOP-VGJP1PJ" time="0.232">
+  <properties/>
+  <testcase name="clearModelAttributeFromSession()" classname="org.springframework.web.reactive.result.method.annotation.ModelInitializerTests" time="0.153"/>
+  <testcase name="modelAttributeMethods()" classname="org.springframework.web.reactive.result.method.annotation.ModelInitializerTests" time="0.031"/>
+  <testcase name="initBinderMethod()" classname="org.springframework.web.reactive.result.method.annotation.ModelInitializerTests" time="0.026"/>
+  <testcase name="requiredSessionAttributeMissing()" classname="org.springframework.web.reactive.result.method.annotation.ModelInitializerTests" time="0.01"/>
+  <testcase name="saveModelAttributeToSession()" classname="org.springframework.web.reactive.result.method.annotation.ModelInitializerTests" time="0.005"/>
+  <testcase name="retrieveModelAttributeFromSession()" classname="org.springframework.web.reactive.result.method.annotation.ModelInitializerTests" time="0.002"/>
+  <system-out><![CDATA[03:14:57.490 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:14:57.533 [boundedElastic-1] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+03:14:57.647 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:14:57.654 [boundedElastic-1] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+03:14:57.676 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:14:57.698 [boundedElastic-1] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+03:14:57.703 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:14:57.709 [boundedElastic-1] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+03:14:57.713 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:14:57.714 [boundedElastic-1] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+03:14:57.718 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:14:57.719 [boundedElastic-1] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

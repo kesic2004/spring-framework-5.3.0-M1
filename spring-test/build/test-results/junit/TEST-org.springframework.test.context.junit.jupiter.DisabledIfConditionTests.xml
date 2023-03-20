@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.context.junit.jupiter.DisabledIfConditionTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:16:14" hostname="DESKTOP-VGJP1PJ" time="0.331">
+  <properties/>
+  <testcase name="disabledWithDefaultReason()" classname="org.springframework.test.context.junit.jupiter.DisabledIfConditionTests" time="0.223"/>
+  <testcase name="missingDisabledIf()" classname="org.springframework.test.context.junit.jupiter.DisabledIfConditionTests" time="0.009"/>
+  <testcase name="disabledByEmptyExpression()" classname="org.springframework.test.context.junit.jupiter.DisabledIfConditionTests" time="0.023"/>
+  <testcase name="notDisabledWithDefaultReason()" classname="org.springframework.test.context.junit.jupiter.DisabledIfConditionTests" time="0.027"/>
+  <testcase name="unsupportedStringEvaluationValue()" classname="org.springframework.test.context.junit.jupiter.DisabledIfConditionTests" time="0.011"/>
+  <testcase name="invalidExpressionEvaluationType()" classname="org.springframework.test.context.junit.jupiter.DisabledIfConditionTests" time="0.015"/>
+  <testcase name="disabledWithCustomReason()" classname="org.springframework.test.context.junit.jupiter.DisabledIfConditionTests" time="0.02"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

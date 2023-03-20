@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.expression.spel.ConstructorInvocationTests" tests="8" skipped="1" failures="0" errors="0" timestamp="2023-03-06T07:14:24" hostname="DESKTOP-VGJP1PJ" time="0.583">
+  <properties/>
+  <testcase name="testAddingConstructorResolvers()" classname="org.springframework.expression.spel.ConstructorInvocationTests" time="0.001"/>
+  <testcase name="testArgumentConversion01()" classname="org.springframework.expression.spel.ConstructorInvocationTests" time="0.115">
+    <skipped/>
+  </testcase>
+  <testcase name="testConstructorThrowingException_SPR6760()" classname="org.springframework.expression.spel.ConstructorInvocationTests" time="0.121"/>
+  <testcase name="testTypeConstructors()" classname="org.springframework.expression.spel.ConstructorInvocationTests" time="0.023"/>
+  <testcase name="testNonExistentType()" classname="org.springframework.expression.spel.ConstructorInvocationTests" time="0.018"/>
+  <testcase name="testVarargsInvocation01()" classname="org.springframework.expression.spel.ConstructorInvocationTests" time="0.047"/>
+  <testcase name="testVarargsInvocation02()" classname="org.springframework.expression.spel.ConstructorInvocationTests" time="0.232"/>
+  <testcase name="testWidening01()" classname="org.springframework.expression.spel.ConstructorInvocationTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

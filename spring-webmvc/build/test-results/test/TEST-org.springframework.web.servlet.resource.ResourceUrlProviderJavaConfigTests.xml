@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.resource.ResourceUrlProviderJavaConfigTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:13:50" hostname="DESKTOP-VGJP1PJ" time="1.614">
+  <properties/>
+  <testcase name="resolvePathWithServletMappedByPrefix()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderJavaConfigTests" time="0.607"/>
+  <testcase name="resolvePathNoMatch()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderJavaConfigTests" time="0.383"/>
+  <testcase name="resolvePathWithServletMappedAsRoot()" classname="org.springframework.web.servlet.resource.ResourceUrlProviderJavaConfigTests" time="0.621"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

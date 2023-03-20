@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.aop.aspectj.BeanNamePointcutAtAspectTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:16:56" hostname="DESKTOP-VGJP1PJ" time="0.575">
+  <properties/>
+  <testcase name="testMatchingBeanName()" classname="org.springframework.aop.aspectj.BeanNamePointcutAtAspectTests" time="0.201"/>
+  <testcase name="testProgrammaticProxyCreation()" classname="org.springframework.aop.aspectj.BeanNamePointcutAtAspectTests" time="0.322"/>
+  <testcase name="testNonMatchingBeanName()" classname="org.springframework.aop.aspectj.BeanNamePointcutAtAspectTests" time="0.031"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

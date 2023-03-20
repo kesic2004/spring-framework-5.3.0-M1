@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.filter.RequestContextFilterTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:07" hostname="DESKTOP-VGJP1PJ" time="0.003">
+  <properties/>
+  <testcase name="happyPath()" classname="org.springframework.web.filter.RequestContextFilterTests" time="0.003"/>
+  <testcase name="withException()" classname="org.springframework.web.filter.RequestContextFilterTests" time="0.0"/>
+  <system-out><![CDATA[03:31:07.338 [Test worker] DEBUG o.s.w.f.RequestContextFilter - Filter 'foo' configured for use
+03:31:07.339 [Test worker] DEBUG o.s.w.f.RequestContextFilter - Filter 'foo' configured for use
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

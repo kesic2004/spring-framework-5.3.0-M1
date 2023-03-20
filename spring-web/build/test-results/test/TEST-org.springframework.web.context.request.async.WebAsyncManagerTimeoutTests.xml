@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:05" hostname="DESKTOP-VGJP1PJ" time="0.018">
+  <properties/>
+  <testcase name="startCallableProcessingTimeoutAndResumeThroughInterceptor()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.001"/>
+  <testcase name="startCallableProcessingAfterTimeoutException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.0"/>
+  <testcase name="startDeferredResultProcessingTimeoutAndResumeThroughCallback()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.0"/>
+  <testcase name="startCallableProcessingTimeoutAndResumeThroughCallback()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.001"/>
+  <testcase name="startCallableProcessingTimeoutAndComplete()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.001"/>
+  <testcase name="startDeferredResultProcessingAfterTimeoutException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.001"/>
+  <testcase name="startDeferredResultProcessingTimeoutAndResumeThroughInterceptor()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.001"/>
+  <testcase name="startDeferredResultProcessingTimeoutAndComplete()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.001"/>
+  <testcase name="startCallableProcessingTimeoutAndCheckThreadInterrupted()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.006"/>
+  <testcase name="startDeferredResultProcessingTimeoutAndResumeWithDefaultResult()" classname="org.springframework.web.context.request.async.WebAsyncManagerTimeoutTests" time="0.001"/>
+  <system-out><![CDATA[03:31:05.837 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.837 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request timeout for /test
+03:31:05.837 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to /test
+03:31:05.838 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.838 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request timeout for /test
+03:31:05.839 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.839 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.839 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to /test
+03:31:05.841 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.841 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request timeout for /test
+03:31:05.841 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to /test
+03:31:05.842 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.842 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request timeout for /test
+03:31:05.842 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.844 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.844 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.845 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.846 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to /test
+03:31:05.846 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.847 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.853 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.853 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request timeout for /test
+03:31:05.853 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.854 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.854 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to /test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

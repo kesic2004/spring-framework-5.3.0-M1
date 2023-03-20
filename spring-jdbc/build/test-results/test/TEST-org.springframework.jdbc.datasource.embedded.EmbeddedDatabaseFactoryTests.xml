@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:47:02" hostname="DESKTOP-VGJP1PJ" time="0.01">
+  <properties/>
+  <testcase name="testGetDataSource()" classname="org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactoryTests" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

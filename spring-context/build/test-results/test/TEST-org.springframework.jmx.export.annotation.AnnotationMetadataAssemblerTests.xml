@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" tests="32" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:18:10" hostname="DESKTOP-VGJP1PJ" time="0.997">
+  <properties/>
+  <testcase name="testDescriptionNotNull()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.086"/>
+  <testcase name="testGetMBeanAttributeInfo()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.031"/>
+  <testcase name="testSetAttribute()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.01"/>
+  <testcase name="testAttributeInfoHasDescriptors()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.03"/>
+  <testcase name="testGetMBeanInfo()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.014"/>
+  <testcase name="testGetMBeanOperationInfo()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.013"/>
+  <testcase name="testRegisterOperations()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.026"/>
+  <testcase name="testRegisterAttributes()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.027"/>
+  <testcase name="testNotificationMetadata()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.012"/>
+  <testcase name="testAttributeHasCorrespondingOperations()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.033"/>
+  <testcase name="testMBeanRegistration()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.007"/>
+  <testcase name="testGetAttribute()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.01"/>
+  <testcase name="testOperationInvocation()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.044"/>
+  <testcase name="testOperationParameterMetadata()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.053"/>
+  <testcase name="testManagedResourceDescriptor()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.013"/>
+  <testcase name="testMetricDescriptor()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.014"/>
+  <testcase name="testOperationDescriptor()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.027"/>
+  <testcase name="testMetricDescription()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.046"/>
+  <testcase name="testWithOnlyGetter()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.069"/>
+  <testcase name="testReadWriteAttribute()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.03"/>
+  <testcase name="testWithOnlySetter()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.015"/>
+  <testcase name="testMetricDescriptorDefaults()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.03"/>
+  <testcase name="testAttributeDescriptionOnGetter()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.009"/>
+  <testcase name="testWithCglibProxy()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.031"/>
+  <testcase name="testReadOnlyAttribute()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.044"/>
+  <testcase name="testAttributeDescriptionOnSetter()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.104"/>
+  <testcase name="testDescription()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.04"/>
+  <testcase name="testAttributeDescriptor()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.041"/>
+  <testcase name="testRegistrationOnInterface()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.007"/>
+  <testcase name="testOperationOnGetter()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.012"/>
+  <testcase name="testOperationFromInterface()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.012"/>
+  <testcase name="testAttributeFromInterface()" classname="org.springframework.jmx.export.annotation.AnnotationMetadataAssemblerTests" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Mar 06, 2023 2:18:10 AM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+Mar 06, 2023 2:18:10 AM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+Mar 06, 2023 2:18:11 AM ClientIntermediary close
+INFO: java.io.IOException: The connection is not currently established.
+java.io.IOException: The connection is not currently established.
+	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.checkState(ClientSynchroMessageConnectionImpl.java:617)
+	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.sendOneWay(ClientSynchroMessageConnectionImpl.java:202)
+	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:300)
+	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:271)
+	at javax.management.remote.generic.ClientIntermediary$GenericClientCommunicatorAdmin.doStop(ClientIntermediary.java:897)
+	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.restart(ClientCommunicatorAdmin.java:172)
+	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.gotIOException(ClientCommunicatorAdmin.java:73)
+	at javax.management.remote.generic.GenericConnector$RequestHandler.execute(GenericConnector.java:662)
+	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl$RemoteJob.run(ClientSynchroMessageConnectionImpl.java:568)
+	at com.sun.jmx.remote.opt.util.ThreadService$ThreadServiceJob.run(ThreadService.java:248)
+	at com.sun.jmx.remote.opt.util.JobExecutor.run(JobExecutor.java:99)
+
+]]></system-err>
+</testsuite>

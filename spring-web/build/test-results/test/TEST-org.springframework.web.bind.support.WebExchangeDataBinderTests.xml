@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.bind.support.WebExchangeDataBinderTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:02" hostname="DESKTOP-VGJP1PJ" time="0.064">
+  <properties/>
+  <testcase name="testFieldDefault()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.014"/>
+  <testcase name="testFieldPrefixCausesFieldReset()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.006"/>
+  <testcase name="testBindingWithNestedObjectCreation()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.003"/>
+  <testcase name="testFieldDefaultPreemptsFieldMarker()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.01"/>
+  <testcase name="testMultipart()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.015"/>
+  <testcase name="testFieldDefaultNonBoolean()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.004"/>
+  <testcase name="testBindingWithQueryParams()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.001"/>
+  <testcase name="testFieldPrefixCausesFieldResetWithIgnoreUnknownFields()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.004"/>
+  <testcase name="testWithCommaSeparatedStringArray()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.005"/>
+  <testcase name="testBindingWithNestedObjectCreationAndWrongOrder()" classname="org.springframework.web.bind.support.WebExchangeDataBinderTests" time="0.002"/>
+  <system-out><![CDATA[03:31:02.830 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [!postProcessed, postProcessed] (content masked)
+03:31:02.838 [Test worker] DEBUG o.s.w.HttpLogging - [281616a0] Read form fields [!postProcessed, postProcessed] (content masked)
+03:31:02.840 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [!postProcessed] (content masked)
+03:31:02.842 [Test worker] DEBUG o.s.w.HttpLogging - [50468afa] Read form fields [!postProcessed] (content masked)
+03:31:02.844 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [_postProcessed, postProcessed] (content masked)
+03:31:02.846 [Test worker] DEBUG o.s.w.HttpLogging - [152d5588] Read form fields [_postProcessed, postProcessed] (content masked)
+03:31:02.847 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [_postProcessed] (content masked)
+03:31:02.849 [Test worker] DEBUG o.s.w.HttpLogging - [339511c0] Read form fields [_postProcessed] (content masked)
+03:31:02.850 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [spouse, spouse.name] (content masked)
+03:31:02.851 [Test worker] DEBUG o.s.w.HttpLogging - [4cc47b36] Read form fields [spouse, spouse.name] (content masked)
+03:31:02.853 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [!postProcessed, _postProcessed, postProcessed] (content masked)
+03:31:02.855 [Test worker] DEBUG o.s.w.HttpLogging - [2f52f7d] Read form fields [!postProcessed, _postProcessed, postProcessed] (content masked)
+03:31:02.856 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [!postProcessed, _postProcessed] (content masked)
+03:31:02.859 [Test worker] DEBUG o.s.w.HttpLogging - [9171857] Read form fields [!postProcessed, _postProcessed] (content masked)
+03:31:02.859 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [_postProcessed] (content masked)
+03:31:02.861 [Test worker] DEBUG o.s.w.HttpLogging - [12c3b0d7] Read form fields [_postProcessed] (content masked)
+03:31:02.863 [Test worker] DEBUG o.s.w.HttpLogging - Encoding parts [name, someList, someArray, part, somePartList] (content masked)
+03:31:02.870 [Test worker] DEBUG o.s.w.HttpLogging - [25d6a8bf] Parsed parts [somePartList, part, name, someList, someArray] (content masked)
+03:31:02.877 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [!name, name] (content masked)
+03:31:02.879 [Test worker] DEBUG o.s.w.HttpLogging - [761b3a4b] Read form fields [!name, name] (content masked)
+03:31:02.879 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [!name] (content masked)
+03:31:02.880 [Test worker] DEBUG o.s.w.HttpLogging - [38f5d9ab] Read form fields [!name] (content masked)
+03:31:02.883 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [_postProcessed, postProcessed] (content masked)
+03:31:02.884 [Test worker] DEBUG o.s.w.HttpLogging - [17a1b88b] Read form fields [_postProcessed, postProcessed] (content masked)
+03:31:02.885 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [_postProcessed] (content masked)
+03:31:02.886 [Test worker] DEBUG o.s.w.HttpLogging - [7110c8a] Read form fields [_postProcessed] (content masked)
+03:31:02.887 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [stringArray] (content masked)
+03:31:02.889 [Test worker] DEBUG o.s.w.HttpLogging - [20bc55f2] Read form fields [stringArray] (content masked)
+03:31:02.889 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [stringArray] (content masked)
+03:31:02.891 [Test worker] DEBUG o.s.w.HttpLogging - [63f64433] Read form fields [stringArray] (content masked)
+03:31:02.892 [Test worker] DEBUG o.s.w.HttpLogging - Writing form fields [spouse.name, spouse] (content masked)
+03:31:02.893 [Test worker] DEBUG o.s.w.HttpLogging - [57e3491] Read form fields [spouse.name, spouse] (content masked)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.web.servlet.samples.standalone.resultmatchers.XpathAssertionTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:17:24" hostname="DESKTOP-VGJP1PJ" time="0.993">
+  <properties/>
+  <testcase name="testFeedWithLinefeedChars()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.XpathAssertionTests" time="0.224"/>
+  <testcase name="testBoolean()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.XpathAssertionTests" time="0.09"/>
+  <testcase name="testDoesNotExist()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.XpathAssertionTests" time="0.079"/>
+  <testcase name="testNodeCount()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.XpathAssertionTests" time="0.099"/>
+  <testcase name="testExists()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.XpathAssertionTests" time="0.152"/>
+  <testcase name="testNumber()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.XpathAssertionTests" time="0.18"/>
+  <testcase name="testString()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.XpathAssertionTests" time="0.166"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

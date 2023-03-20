@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.mock.http.server.reactive.MockServerHttpRequestTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:15:45" hostname="DESKTOP-VGJP1PJ" time="0.711">
+  <properties/>
+  <testcase name="queryParams()" classname="org.springframework.mock.http.server.reactive.MockServerHttpRequestTests" time="0.54"/>
+  <testcase name="cookieHeaderSet()" classname="org.springframework.mock.http.server.reactive.MockServerHttpRequestTests" time="0.013"/>
+  <testcase name="httpMethodNotNullOrEmpty(Executable)[1]" classname="org.springframework.mock.http.server.reactive.MockServerHttpRequestTests" time="0.109"/>
+  <testcase name="httpMethodNotNullOrEmpty(Executable)[2]" classname="org.springframework.mock.http.server.reactive.MockServerHttpRequestTests" time="0.001"/>
+  <testcase name="httpMethodNotNullOrEmpty(Executable)[3]" classname="org.springframework.mock.http.server.reactive.MockServerHttpRequestTests" time="0.001"/>
+  <testcase name="httpMethodNotNullOrEmpty(Executable)[4]" classname="org.springframework.mock.http.server.reactive.MockServerHttpRequestTests" time="0.001"/>
+  <testcase name="httpMethodNotNullOrEmpty(Executable)[5]" classname="org.springframework.mock.http.server.reactive.MockServerHttpRequestTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

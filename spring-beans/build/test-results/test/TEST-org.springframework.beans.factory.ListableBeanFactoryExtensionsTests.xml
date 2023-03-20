@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-06T04:34:15" hostname="DESKTOP-VGJP1PJ" time="1.823">
+  <properties/>
+  <testcase name="findAnnotationOnBean with String and reified type parameters()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.214"/>
+  <testcase name="getBeansOfType with reified type parameters and Boolean()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.494"/>
+  <testcase name="getBeansOfType with reified type parameters()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.299"/>
+  <testcase name="getBeansOfType with reified type parameters, Boolean and Boolean()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.21"/>
+  <testcase name="getBeansWithAnnotation with reified type parameters()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.057"/>
+  <testcase name="getBeanNamesForAnnotation with reified type parameters()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.052"/>
+  <testcase name="getBeanNamesForType with reified type parameters()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.192"/>
+  <testcase name="getBeanNamesForType with reified type parameters, Boolean and Boolean()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.156"/>
+  <testcase name="getBeanNamesForType with reified type parameters and Boolean()" classname="org.springframework.beans.factory.ListableBeanFactoryExtensionsTests" time="0.113"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.core.annotation.MergedAnnotationCollectorsTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:15:01" hostname="DESKTOP-VGJP1PJ" time="0.048">
+  <properties/>
+  <testcase name="toAnnotationArrayCollectsAnnotationArrayWithSynthesizedAnnotations()" classname="org.springframework.core.annotation.MergedAnnotationCollectorsTests" time="0.036"/>
+  <testcase name="toAnnotationSetCollectsLinkedHashSetWithSynthesizedAnnotations()" classname="org.springframework.core.annotation.MergedAnnotationCollectorsTests" time="0.003"/>
+  <testcase name="toFinishedMultiValueMapCollectsMultiValueMap()" classname="org.springframework.core.annotation.MergedAnnotationCollectorsTests" time="0.002"/>
+  <testcase name="toSuppliedAnnotationArrayCollectsAnnotationArrayWithSynthesizedAnnotations()" classname="org.springframework.core.annotation.MergedAnnotationCollectorsTests" time="0.002"/>
+  <testcase name="toMultiValueMapCollectsMultiValueMap()" classname="org.springframework.core.annotation.MergedAnnotationCollectorsTests" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

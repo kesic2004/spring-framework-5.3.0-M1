@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.config.annotation.CorsRegistryTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:12:08" hostname="DESKTOP-VGJP1PJ" time="0.006">
+  <properties/>
+  <testcase name="customizedMapping()" classname="org.springframework.web.servlet.config.annotation.CorsRegistryTests" time="0.004"/>
+  <testcase name="noMapping()" classname="org.springframework.web.servlet.config.annotation.CorsRegistryTests" time="0.001"/>
+  <testcase name="multipleMappings()" classname="org.springframework.web.servlet.config.annotation.CorsRegistryTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

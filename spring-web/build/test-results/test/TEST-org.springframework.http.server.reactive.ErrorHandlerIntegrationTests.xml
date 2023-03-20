@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:30:55" hostname="DESKTOP-VGJP1PJ" time="0.862">
+  <properties/>
+  <testcase name="handlingError(HttpServer)[1]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.021"/>
+  <testcase name="handlingError(HttpServer)[2]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.015"/>
+  <testcase name="handlingError(HttpServer)[3]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.225"/>
+  <testcase name="handlingError(HttpServer)[4]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.032"/>
+  <testcase name="responseBodyError(HttpServer)[1]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.02"/>
+  <testcase name="responseBodyError(HttpServer)[2]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.013"/>
+  <testcase name="responseBodyError(HttpServer)[3]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.212"/>
+  <testcase name="responseBodyError(HttpServer)[4]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.024"/>
+  <testcase name="emptyPathSegments(HttpServer)[1]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.019"/>
+  <testcase name="emptyPathSegments(HttpServer)[2]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.011"/>
+  <testcase name="emptyPathSegments(HttpServer)[3]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.236"/>
+  <testcase name="emptyPathSegments(HttpServer)[4]" classname="org.springframework.http.server.reactive.ErrorHandlerIntegrationTests" time="0.025"/>
+  <system-out><![CDATA[03:30:55.701 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:30:55.707 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 59681(0 millis).
+03:30:55.712 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59681/handling-error
+03:30:55.713 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:55.717 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+03:30:55.718 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:30:55.721 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:30:55.724 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:30:55.725 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 59688(0 millis).
+03:30:55.730 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59688/handling-error
+03:30:55.730 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:55.733 [reactor-http-nio-4] ERROR r.n.h.s.HttpServerOperations - [id: 0x2ced3f9d, L:/127.0.0.1:59688 - R:/127.0.0.1:59689] Error starting response. Replying error status
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.server.reactive.ErrorHandlerIntegrationTests$ErrorHandler.handle(ErrorHandlerIntegrationTests.java:91) ~[test/:?]
+	at org.springframework.http.server.reactive.ReactorHttpHandlerAdapter.apply(ReactorHttpHandlerAdapter.java:65) ~[spring-web-5.3.0-M1.jar:?]
+	at org.springframework.http.server.reactive.ReactorHttpHandlerAdapter.apply(ReactorHttpHandlerAdapter.java:40) ~[spring-web-5.3.0-M1.jar:?]
+	at reactor.netty.http.server.HttpServer$HttpServerHandle.onStateChange(HttpServer.java:503) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at reactor.netty.transport.ServerTransport$ChildObserver.onStateChange(ServerTransport.java:440) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:475) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:94) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:178) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+03:30:55.736 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+03:30:55.737 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:30:55.737 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:30:55.739 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:30:55.753 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 59690(0 millis).
+03:30:55.758 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59690/handling-error
+03:30:55.758 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:55.766 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+03:30:55.766 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:30:55.964 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:30:55.965 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:30:55.974 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 59707(0 millis).
+03:30:55.984 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59707/handling-error
+03:30:55.984 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:55.989 [XNIO-4 I/O-2] DEBUG o.s.w.HttpLogging - [3db78dc2] Setting HttpServerExchange status to 500 Server Error
+03:30:55.990 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+03:30:55.991 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:30:55.997 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:30:56.000 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:30:56.007 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 59710(0 millis).
+03:30:56.011 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59710/response-body-error
+03:30:56.012 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:56.015 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+03:30:56.016 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:30:56.019 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:30:56.019 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:30:56.021 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 59716(0 millis).
+03:30:56.024 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59716/response-body-error
+03:30:56.025 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:56.028 [reactor-http-nio-2] ERROR r.n.h.s.HttpServerOperations - [id: 0x75cb4b21, L:/127.0.0.1:59716 - R:/127.0.0.1:59717] Error starting response. Replying error status
+java.lang.UnsupportedOperationException: null
+	at org.springframework.http.server.reactive.ErrorHandlerIntegrationTests$ErrorHandler.handle(ErrorHandlerIntegrationTests.java:91) ~[test/:?]
+	at org.springframework.http.server.reactive.ReactorHttpHandlerAdapter.apply(ReactorHttpHandlerAdapter.java:65) ~[spring-web-5.3.0-M1.jar:?]
+	at org.springframework.http.server.reactive.ReactorHttpHandlerAdapter.apply(ReactorHttpHandlerAdapter.java:40) ~[spring-web-5.3.0-M1.jar:?]
+	at reactor.netty.http.server.HttpServer$HttpServerHandle.onStateChange(HttpServer.java:503) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at reactor.netty.transport.ServerTransport$ChildObserver.onStateChange(ServerTransport.java:440) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:475) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:94) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:178) [reactor-netty-1.0.0-M1.jar:1.0.0-M1]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+03:30:56.031 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+03:30:56.031 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:30:56.032 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:30:56.034 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:30:56.047 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 59718(0 millis).
+03:30:56.052 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59718/response-body-error
+03:30:56.052 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:56.057 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+03:30:56.058 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:30:56.243 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:30:56.244 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:30:56.253 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 59736(0 millis).
+03:30:56.258 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59736/response-body-error
+03:30:56.258 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:56.262 [XNIO-5 I/O-4] DEBUG o.s.w.HttpLogging - [4e9a4421] Setting HttpServerExchange status to 500 Server Error
+03:30:56.262 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 500 INTERNAL_SERVER_ERROR
+03:30:56.263 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:30:56.268 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:30:56.270 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:30:56.275 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 59738(0 millis).
+03:30:56.281 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59738//
+03:30:56.281 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:56.285 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:56.285 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:30:56.288 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:30:56.289 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:30:56.291 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 59744(0 millis).
+03:30:56.295 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59744//
+03:30:56.296 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:56.299 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:56.299 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:30:56.300 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:30:56.301 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:30:56.314 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 59746(0 millis).
+03:30:56.318 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59746//
+03:30:56.318 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:56.324 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:56.324 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:30:56.537 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:30:56.538 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:30:56.547 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 59764(0 millis).
+03:30:56.552 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59764//
+03:30:56.552 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+03:30:56.555 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:56.556 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:30:56.562 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[Mar 06, 2023 3:30:55 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 06, 2023 3:30:55 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.36]
+Mar 06, 2023 3:30:55 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-4"]
+Mar 06, 2023 3:30:55 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-4-59690"]
+Mar 06, 2023 3:30:55 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-4-59690"]
+Mar 06, 2023 3:30:55 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 06, 2023 3:30:55 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-4-59690"]
+Mar 06, 2023 3:30:55 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-4-59690"]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.36]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-5"]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-5-59718"]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-5-59718"]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-5-59718"]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-5-59718"]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.36]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-6"]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-6-59746"]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-6-59746"]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-6-59746"]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-6-59746"]
+]]></system-err>
+</testsuite>

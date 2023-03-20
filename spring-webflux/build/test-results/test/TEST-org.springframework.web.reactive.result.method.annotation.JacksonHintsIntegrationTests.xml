@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" tests="36" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:16:05" hostname="DESKTOP-VGJP1PJ" time="21.273">
+  <properties/>
+  <testcase name="jsonViewWithEntityMonoRequest(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="1.79"/>
+  <testcase name="jsonViewWithEntityMonoRequest(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="1.706"/>
+  <testcase name="jsonViewWithEntityMonoRequest(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="3.129"/>
+  <testcase name="jsonViewWithEntityMonoRequest(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="1.093"/>
+  <testcase name="jsonViewWithRequest(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.362"/>
+  <testcase name="jsonViewWithRequest(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.61"/>
+  <testcase name="jsonViewWithRequest(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.987"/>
+  <testcase name="jsonViewWithRequest(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.485"/>
+  <testcase name="jsonViewWithMonoResponseEntity(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="1.281"/>
+  <testcase name="jsonViewWithMonoResponseEntity(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.658"/>
+  <testcase name="jsonViewWithMonoResponseEntity(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="1.404"/>
+  <testcase name="jsonViewWithMonoResponseEntity(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.341"/>
+  <testcase name="jsonViewWithFluxRequest(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.456"/>
+  <testcase name="jsonViewWithFluxRequest(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.163"/>
+  <testcase name="jsonViewWithFluxRequest(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.6"/>
+  <testcase name="jsonViewWithFluxRequest(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.379"/>
+  <testcase name="jsonViewWithMonoRequest(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.558"/>
+  <testcase name="jsonViewWithMonoRequest(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.239"/>
+  <testcase name="jsonViewWithMonoRequest(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.614"/>
+  <testcase name="jsonViewWithMonoRequest(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.324"/>
+  <testcase name="jsonViewResponse(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.175"/>
+  <testcase name="jsonViewResponse(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.155"/>
+  <testcase name="jsonViewResponse(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.375"/>
+  <testcase name="jsonViewResponse(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.22"/>
+  <testcase name="jsonViewWithFluxResponse(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.164"/>
+  <testcase name="jsonViewWithFluxResponse(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.229"/>
+  <testcase name="jsonViewWithFluxResponse(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.411"/>
+  <testcase name="jsonViewWithFluxResponse(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.13"/>
+  <testcase name="jsonViewWithEntityFluxRequest(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.119"/>
+  <testcase name="jsonViewWithEntityFluxRequest(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.112"/>
+  <testcase name="jsonViewWithEntityFluxRequest(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.36"/>
+  <testcase name="jsonViewWithEntityFluxRequest(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.114"/>
+  <testcase name="jsonViewWithMonoResponse(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.11"/>
+  <testcase name="jsonViewWithMonoResponse(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.132"/>
+  <testcase name="jsonViewWithMonoResponse(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.372"/>
+  <testcase name="jsonViewWithMonoResponse(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests" time="0.17"/>
+  <system-out><![CDATA[03:16:05.953 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:06.092 [Test worker] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 6.1.5.Final
+03:16:06.470 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:06.504 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:06.521 [Test worker] INFO  o.e.j.u.log - Logging initialized @20190ms to org.eclipse.jetty.util.log.Slf4jLog
+03:16:06.566 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:06.601 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@652fde9b{/,null,AVAILABLE}
+03:16:06.643 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:06.648 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:06.825 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@3e488392{HTTP/1.1, (http/1.1)}{0.0.0.0:56066}
+03:16:06.826 [Test worker] INFO  o.e.j.s.Server - Started @20496ms
+03:16:06.826 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56066(0 millis).
+03:16:06.852 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56066/request/entity/mono
+03:16:06.855 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:07.089 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@3b240519] as "application/json"
+03:16:07.323 [qtp1760991576-91] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1df9b92d] HTTP POST "/request/entity/mono"
+03:16:07.329 [qtp1760991576-91] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [1df9b92d] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#entityMonoRequest(HttpEntity)
+03:16:07.363 [qtp1760991576-91] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [1df9b92d] Content-Type:application/json
+03:16:07.412 [qtp1760991576-91] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [1df9b92d] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:07.421 [qtp1760991576-91] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:07.422 [qtp1760991576-91] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [1df9b92d] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:07.432 [qtp1760991576-91] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1df9b92d] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:07.433 [qtp1760991576-91] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [1df9b92d] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:07.462 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:07.463 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:07.470 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:07.475 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@652fde9b{/,null,UNAVAILABLE}
+03:16:07.487 [qtp1760991576-91] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1df9b92d] Completed 200 OK
+03:16:07.550 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@3e488392{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:07.597 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:07.734 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:07.852 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:07.932 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:08.099 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:08.797 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56082(0 millis).
+03:16:08.797 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56082/request/entity/mono
+03:16:08.798 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:08.799 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@9a52738] as "application/json"
+03:16:09.148 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6c7bc762-1] HTTP POST "/request/entity/mono"
+03:16:09.151 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [6c7bc762-1] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#entityMonoRequest(HttpEntity)
+03:16:09.155 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [6c7bc762-1] Content-Type:application/json
+03:16:09.157 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [6c7bc762-1] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:09.167 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:09.168 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [6c7bc762-1] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:09.271 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6c7bc762-1] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:09.275 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [6c7bc762-1] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:09.321 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:09.321 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:09.322 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:09.326 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:09.351 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6c7bc762-1] Completed 200 OK
+03:16:09.514 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:09.596 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:09.646 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:09.845 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:11.643 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56087(0 millis).
+03:16:11.643 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56087/request/entity/mono
+03:16:11.647 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:11.649 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@27eec815] as "application/json"
+03:16:12.075 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [761ef0e2] HTTP POST "/request/entity/mono"
+03:16:12.076 [http-nio-auto-1-exec-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [761ef0e2] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#entityMonoRequest(HttpEntity)
+03:16:12.079 [http-nio-auto-1-exec-2] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [761ef0e2] Content-Type:application/json
+03:16:12.080 [http-nio-auto-1-exec-2] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [761ef0e2] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:12.083 [http-nio-auto-1-exec-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:12.083 [http-nio-auto-1-exec-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [761ef0e2] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:12.085 [http-nio-auto-1-exec-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [761ef0e2] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:12.085 [http-nio-auto-1-exec-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [761ef0e2] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:12.092 [http-nio-auto-1-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [761ef0e2] Completed 200 OK
+03:16:12.092 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:12.092 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:12.093 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:12.484 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:12.638 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:12.722 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:12.799 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:12.822 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:12.869 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:12.958 [Test worker] INFO  o.xnio - XNIO version 3.8.0.Final
+03:16:13.014 [Test worker] INFO  o.x.nio - XNIO NIO Implementation Version 3.8.0.Final
+03:16:13.229 [Test worker] INFO  o.j.threads - JBoss Threads version 3.1.0.Final
+03:16:13.454 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56106(0 millis).
+03:16:13.455 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56106/request/entity/mono
+03:16:13.457 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:13.458 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@5f58448e] as "application/json"
+03:16:13.552 [XNIO-1 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [115c1d28] HTTP POST "/request/entity/mono"
+03:16:13.552 [XNIO-1 I/O-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [115c1d28] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#entityMonoRequest(HttpEntity)
+03:16:13.554 [XNIO-1 I/O-3] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [115c1d28] Content-Type:application/json
+03:16:13.555 [XNIO-1 I/O-3] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [115c1d28] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:13.557 [XNIO-1 I/O-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:13.557 [XNIO-1 I/O-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [115c1d28] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:13.566 [XNIO-1 I/O-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [115c1d28] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:13.566 [XNIO-1 I/O-3] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [115c1d28] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:13.582 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:13.583 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:13.587 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:13.587 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:13.589 [XNIO-1 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [115c1d28] Completed 200 OK
+03:16:13.601 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:13.756 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:13.844 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:13.929 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:13.930 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:13.931 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@23f74f2e{/,null,AVAILABLE}
+03:16:13.931 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:13.932 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:13.957 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@678f4e73{HTTP/1.1, (http/1.1)}{0.0.0.0:56108}
+03:16:13.958 [Test worker] INFO  o.e.j.s.Server - Started @27629ms
+03:16:13.958 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56108(0 millis).
+03:16:13.958 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56108/request/raw
+03:16:13.959 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:13.960 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@5f12999] as "application/json"
+03:16:13.969 [qtp2853757-134] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5c2acc22] HTTP POST "/request/raw"
+03:16:13.969 [qtp2853757-134] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [5c2acc22] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#rawRequest(JacksonViewBean)
+03:16:13.974 [qtp2853757-134] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [5c2acc22] Content-Type:application/json
+03:16:13.975 [qtp2853757-134] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [5c2acc22] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:13.976 [qtp2853757-134] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [5c2acc22] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:13.983 [qtp2853757-134] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:13.983 [qtp2853757-134] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [5c2acc22] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:13.984 [qtp2853757-134] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [5c2acc22] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:13.985 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:13.985 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:13.986 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:13.986 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@23f74f2e{/,null,UNAVAILABLE}
+03:16:13.985 [qtp2853757-134] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5c2acc22] Completed 200 OK
+03:16:13.990 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@678f4e73{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:13.991 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:14.274 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:14.461 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:14.547 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:14.575 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:14.583 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56114(0 millis).
+03:16:14.583 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56114/request/raw
+03:16:14.583 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:14.584 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@2af4d4f0] as "application/json"
+03:16:14.597 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [15f6671a-2] HTTP POST "/request/raw"
+03:16:14.597 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [15f6671a-2] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#rawRequest(JacksonViewBean)
+03:16:14.599 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [15f6671a-2] Content-Type:application/json
+03:16:14.601 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [15f6671a-2] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:14.601 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [15f6671a-2] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:14.609 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:14.609 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [15f6671a-2] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:14.610 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [15f6671a-2] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:14.613 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:14.613 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [15f6671a-2] Completed 200 OK
+03:16:14.613 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:14.614 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:14.614 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:14.766 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:14.900 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:15.016 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:15.018 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:15.087 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56116(0 millis).
+03:16:15.088 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56116/request/raw
+03:16:15.089 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:15.090 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@2bb18d6d] as "application/json"
+03:16:15.270 [http-nio-auto-2-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [63e5728b] HTTP POST "/request/raw"
+03:16:15.271 [http-nio-auto-2-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [63e5728b] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#rawRequest(JacksonViewBean)
+03:16:15.273 [http-nio-auto-2-exec-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [63e5728b] Content-Type:application/json
+03:16:15.274 [http-nio-auto-2-exec-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [63e5728b] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:15.275 [http-nio-auto-2-exec-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [63e5728b] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:15.277 [http-nio-auto-2-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:15.277 [http-nio-auto-2-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [63e5728b] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:15.277 [http-nio-auto-2-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [63e5728b] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:15.279 [http-nio-auto-2-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [63e5728b] Completed 200 OK
+03:16:15.279 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:15.279 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:15.280 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:15.617 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:15.700 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:15.787 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:15.949 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:15.950 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:15.950 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:15.971 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56133(0 millis).
+03:16:15.972 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56133/request/raw
+03:16:15.973 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:16.009 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@15fc8139] as "application/json"
+03:16:16.106 [XNIO-2 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7af60e1b] HTTP POST "/request/raw"
+03:16:16.107 [XNIO-2 I/O-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7af60e1b] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#rawRequest(JacksonViewBean)
+03:16:16.108 [XNIO-2 I/O-3] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [7af60e1b] Content-Type:application/json
+03:16:16.109 [XNIO-2 I/O-3] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [7af60e1b] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:16.110 [XNIO-2 I/O-3] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [7af60e1b] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:16.111 [XNIO-2 I/O-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:16.111 [XNIO-2 I/O-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [7af60e1b] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:16.112 [XNIO-2 I/O-3] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [7af60e1b] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:16.114 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:16.115 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:16.115 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:16.115 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:16.114 [XNIO-2 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7af60e1b] Completed 200 OK
+03:16:16.119 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:16.265 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:16.392 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:16.733 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:16.733 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:16.734 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@31d6afb5{/,null,AVAILABLE}
+03:16:16.736 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:16.736 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:17.373 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@6cebad54{HTTP/1.1, (http/1.1)}{0.0.0.0:56135}
+03:16:17.374 [Test worker] INFO  o.e.j.s.Server - Started @31044ms
+03:16:17.374 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56135(0 millis).
+03:16:17.374 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56135/response/entity
+03:16:17.374 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:17.398 [qtp705202794-175] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [116bd8e1] HTTP GET "/response/entity"
+03:16:17.401 [qtp705202794-175] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [116bd8e1] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoResponseEntity()
+03:16:17.409 [qtp705202794-175] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:17.409 [qtp705202794-175] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [116bd8e1] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:17.410 [qtp705202794-175] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [116bd8e1] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:17.411 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:17.411 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:17.411 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:17.412 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@31d6afb5{/,null,UNAVAILABLE}
+03:16:17.412 [qtp705202794-175] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [116bd8e1] Completed 200 OK
+03:16:17.416 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@6cebad54{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:17.422 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:17.582 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:17.690 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:17.724 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:17.724 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:18.110 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56141(0 millis).
+03:16:18.113 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56141/response/entity
+03:16:18.114 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:18.118 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d2b2eb50-3] HTTP GET "/response/entity"
+03:16:18.118 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [d2b2eb50-3] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoResponseEntity()
+03:16:18.122 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:18.122 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [d2b2eb50-3] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:18.123 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [d2b2eb50-3] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:18.124 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d2b2eb50-3] Completed 200 OK
+03:16:18.125 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:18.125 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:18.125 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:18.126 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:18.255 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:18.299 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:18.351 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:18.355 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:18.379 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56143(0 millis).
+03:16:18.381 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56143/response/entity
+03:16:18.382 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:18.430 [http-nio-auto-3-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1feac984] HTTP GET "/response/entity"
+03:16:18.431 [http-nio-auto-3-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [1feac984] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoResponseEntity()
+03:16:18.435 [http-nio-auto-3-exec-1] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:18.435 [http-nio-auto-3-exec-1] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [1feac984] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:18.436 [http-nio-auto-3-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [1feac984] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:18.437 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:18.437 [http-nio-auto-3-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1feac984] Completed 200 OK
+03:16:18.437 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:18.439 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:19.558 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:19.684 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:19.724 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:19.865 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:19.866 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:19.866 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:19.885 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56160(0 millis).
+03:16:19.885 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56160/response/entity
+03:16:19.888 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:19.908 [XNIO-3 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [c0e1a48] HTTP GET "/response/entity"
+03:16:19.909 [XNIO-3 I/O-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [c0e1a48] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoResponseEntity()
+03:16:19.912 [XNIO-3 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:19.912 [XNIO-3 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseEntityResultHandler - [c0e1a48] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:19.913 [XNIO-3 I/O-4] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [c0e1a48] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:19.914 [XNIO-3 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [c0e1a48] Completed 200 OK
+03:16:19.915 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:19.915 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:19.915 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:19.915 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:19.923 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:20.199 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:20.267 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:20.317 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:20.321 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:20.321 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@32518c6f{/,null,AVAILABLE}
+03:16:20.321 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:20.321 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:20.343 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@5020e5a{HTTP/1.1, (http/1.1)}{0.0.0.0:56162}
+03:16:20.343 [Test worker] INFO  o.e.j.s.Server - Started @34013ms
+03:16:20.343 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56162(0 millis).
+03:16:20.343 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56162/request/flux
+03:16:20.344 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:20.348 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@39056d42, org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@26f89a9d]] as "application/json"
+03:16:20.357 [qtp1697061999-216] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6dd66944] HTTP POST "/request/flux"
+03:16:20.357 [qtp1697061999-216] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [6dd66944] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#fluxRequest(Flux)
+03:16:20.360 [qtp1697061999-216] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [6dd66944] Content-Type:application/json
+03:16:20.362 [qtp1697061999-216] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [6dd66944] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:20.378 [qtp1697061999-216] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:20.378 [qtp1697061999-216] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [6dd66944] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:20.396 [qtp1697061999-216] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6dd66944] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:20.396 [qtp1697061999-216] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [6dd66944] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:20.397 [qtp1697061999-216] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [6dd66944] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:20.399 [qtp1697061999-216] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6dd66944] Completed 200 OK
+03:16:20.399 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:20.400 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:20.400 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:20.400 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@32518c6f{/,null,UNAVAILABLE}
+03:16:20.404 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@5020e5a{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:20.406 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:20.485 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:20.519 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:20.559 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:20.559 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:20.561 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56168(0 millis).
+03:16:20.561 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56168/request/flux
+03:16:20.562 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:20.562 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@55e89ab8, org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@3b7c574d]] as "application/json"
+03:16:20.566 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d9f82839-4] HTTP POST "/request/flux"
+03:16:20.567 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [d9f82839-4] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#fluxRequest(Flux)
+03:16:20.568 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [d9f82839-4] Content-Type:application/json
+03:16:20.569 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [d9f82839-4] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:20.571 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:20.572 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [d9f82839-4] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:20.573 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [d9f82839-4] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:20.573 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [d9f82839-4] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:20.574 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [d9f82839-4] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:20.581 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:20.590 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:20.590 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d9f82839-4] Completed 200 OK
+03:16:20.593 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:20.594 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:20.684 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:20.756 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:20.791 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:20.792 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:20.823 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56170(0 millis).
+03:16:20.824 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56170/request/flux
+03:16:20.825 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:20.826 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@48e8ac3f, org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@77c6eaf4]] as "application/json"
+03:16:20.855 [http-nio-auto-4-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [30ac199c] HTTP POST "/request/flux"
+03:16:20.858 [http-nio-auto-4-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [30ac199c] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#fluxRequest(Flux)
+03:16:20.860 [http-nio-auto-4-exec-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [30ac199c] Content-Type:application/json
+03:16:20.861 [http-nio-auto-4-exec-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [30ac199c] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:20.863 [http-nio-auto-4-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:20.863 [http-nio-auto-4-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [30ac199c] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:20.876 [http-nio-auto-4-exec-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [30ac199c] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:20.876 [http-nio-auto-4-exec-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [30ac199c] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:20.878 [http-nio-auto-4-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [30ac199c] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:20.880 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:20.880 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:20.880 [http-nio-auto-4-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [30ac199c] Completed 200 OK
+03:16:20.881 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:21.217 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:21.401 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:21.517 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:21.555 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:21.555 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:21.555 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:21.576 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56187(0 millis).
+03:16:21.577 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56187/request/flux
+03:16:21.578 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:21.579 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@3af71017, org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@6ab55daf]] as "application/json"
+03:16:21.598 [XNIO-4 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [623a94d3] HTTP POST "/request/flux"
+03:16:21.598 [XNIO-4 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [623a94d3] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#fluxRequest(Flux)
+03:16:21.599 [XNIO-4 I/O-2] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [623a94d3] Content-Type:application/json
+03:16:21.600 [XNIO-4 I/O-2] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [623a94d3] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:21.603 [XNIO-4 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:21.603 [XNIO-4 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [623a94d3] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:21.604 [XNIO-4 I/O-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [623a94d3] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:21.604 [XNIO-4 I/O-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [623a94d3] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:21.605 [XNIO-4 I/O-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [623a94d3] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:21.609 [XNIO-4 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [623a94d3] Completed 200 OK
+03:16:21.610 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:21.610 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:21.613 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:21.613 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:21.622 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:21.964 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:22.117 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:22.169 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:22.171 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:22.171 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@1a061ac1{/,null,AVAILABLE}
+03:16:22.172 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:22.172 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:22.183 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@2c775b97{HTTP/1.1, (http/1.1)}{0.0.0.0:56189}
+03:16:22.184 [Test worker] INFO  o.e.j.s.Server - Started @35854ms
+03:16:22.184 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56189(0 millis).
+03:16:22.184 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56189/request/mono
+03:16:22.185 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:22.186 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@1b75b024] as "application/json"
+03:16:22.190 [qtp774553647-258] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [718cd5db] HTTP POST "/request/mono"
+03:16:22.190 [qtp774553647-258] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [718cd5db] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoRequest(Mono)
+03:16:22.192 [qtp774553647-258] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [718cd5db] Content-Type:application/json
+03:16:22.193 [qtp774553647-258] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [718cd5db] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:22.195 [qtp774553647-258] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:22.195 [qtp774553647-258] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [718cd5db] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:22.196 [qtp774553647-258] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [718cd5db] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:22.196 [qtp774553647-258] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [718cd5db] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:22.197 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:22.197 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:22.197 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:22.197 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1a061ac1{/,null,UNAVAILABLE}
+03:16:22.198 [qtp774553647-258] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [718cd5db] Completed 200 OK
+03:16:22.201 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@2c775b97{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:22.202 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:22.309 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:22.380 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:22.421 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:22.422 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:22.449 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56195(0 millis).
+03:16:22.449 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56195/request/mono
+03:16:22.449 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:22.450 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@3de2a1e6] as "application/json"
+03:16:22.454 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [fc7ab99d-5] HTTP POST "/request/mono"
+03:16:22.455 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [fc7ab99d-5] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoRequest(Mono)
+03:16:22.456 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [fc7ab99d-5] Content-Type:application/json
+03:16:22.456 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [fc7ab99d-5] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:22.458 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:22.458 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [fc7ab99d-5] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:22.460 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [fc7ab99d-5] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:22.460 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [fc7ab99d-5] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:22.461 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:22.462 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [fc7ab99d-5] Completed 200 OK
+03:16:22.462 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:22.462 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:22.462 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:22.549 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:22.598 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:22.634 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:22.636 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:22.655 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56197(0 millis).
+03:16:22.656 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56197/request/mono
+03:16:22.657 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:22.658 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@2e2c05cd] as "application/json"
+03:16:22.664 [http-nio-auto-5-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7a97ce14] HTTP POST "/request/mono"
+03:16:22.665 [http-nio-auto-5-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7a97ce14] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoRequest(Mono)
+03:16:22.666 [http-nio-auto-5-exec-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [7a97ce14] Content-Type:application/json
+03:16:22.667 [http-nio-auto-5-exec-1] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [7a97ce14] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:22.669 [http-nio-auto-5-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:22.669 [http-nio-auto-5-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [7a97ce14] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:22.670 [http-nio-auto-5-exec-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [7a97ce14] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:22.670 [http-nio-auto-5-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [7a97ce14] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:22.672 [http-nio-auto-5-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7a97ce14] Completed 200 OK
+03:16:22.672 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:22.672 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:22.673 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:23.095 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:23.204 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:23.277 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:23.396 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:23.397 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:23.397 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:23.409 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56214(0 millis).
+03:16:23.410 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56214/request/mono
+03:16:23.410 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:23.410 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@64df4e91] as "application/json"
+03:16:23.421 [XNIO-5 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1e215f0] HTTP POST "/request/mono"
+03:16:23.422 [XNIO-5 I/O-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [1e215f0] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoRequest(Mono)
+03:16:23.423 [XNIO-5 I/O-4] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [1e215f0] Content-Type:application/json
+03:16:23.424 [XNIO-5 I/O-4] DEBUG o.s.w.r.r.m.a.RequestBodyMethodArgumentResolver - [1e215f0] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:23.425 [XNIO-5 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:23.425 [XNIO-5 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [1e215f0] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:23.426 [XNIO-5 I/O-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [1e215f0] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:23.427 [XNIO-5 I/O-4] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [1e215f0] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:23.428 [XNIO-5 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1e215f0] Completed 200 OK
+03:16:23.430 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:23.430 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:23.431 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:23.431 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:23.437 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:23.521 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:23.567 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:23.600 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:23.601 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:23.602 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@8db077b{/,null,AVAILABLE}
+03:16:23.602 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:23.602 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:23.623 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@4509a3ea{HTTP/1.1, (http/1.1)}{0.0.0.0:56216}
+03:16:23.624 [Test worker] INFO  o.e.j.s.Server - Started @37293ms
+03:16:23.624 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56216(0 millis).
+03:16:23.624 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56216/response/raw
+03:16:23.624 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:23.627 [qtp1140398521-299] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5de6faa] HTTP GET "/response/raw"
+03:16:23.628 [qtp1140398521-299] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [5de6faa] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#rawResponse()
+03:16:23.630 [qtp1140398521-299] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:23.630 [qtp1140398521-299] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [5de6faa] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:23.630 [qtp1140398521-299] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [5de6faa] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:23.632 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:23.632 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:23.632 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:23.632 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@8db077b{/,null,UNAVAILABLE}
+03:16:23.633 [qtp1140398521-299] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5de6faa] Completed 200 OK
+03:16:23.636 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@4509a3ea{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:23.637 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:23.723 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:23.775 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:23.804 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:23.804 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:23.806 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56222(0 millis).
+03:16:23.806 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56222/response/raw
+03:16:23.807 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:23.810 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d7292759-6] HTTP GET "/response/raw"
+03:16:23.810 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [d7292759-6] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#rawResponse()
+03:16:23.812 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:23.812 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [d7292759-6] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:23.813 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [d7292759-6] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:23.814 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:23.815 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d7292759-6] Completed 200 OK
+03:16:23.815 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:23.815 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:23.815 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:23.873 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:23.901 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:23.932 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:23.933 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:23.952 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56224(0 millis).
+03:16:23.952 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56224/response/raw
+03:16:23.952 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:23.964 [http-nio-auto-6-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [33c3c975] HTTP GET "/response/raw"
+03:16:23.965 [http-nio-auto-6-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [33c3c975] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#rawResponse()
+03:16:23.967 [http-nio-auto-6-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:23.967 [http-nio-auto-6-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [33c3c975] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:23.967 [http-nio-auto-6-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [33c3c975] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:23.968 [http-nio-auto-6-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [33c3c975] Completed 200 OK
+03:16:23.968 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:23.969 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:23.969 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:24.209 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:24.319 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:24.357 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:24.409 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:24.409 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:24.409 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:24.420 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56241(0 millis).
+03:16:24.420 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56241/response/raw
+03:16:24.420 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:24.431 [XNIO-6 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [201859f2] HTTP GET "/response/raw"
+03:16:24.431 [XNIO-6 I/O-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [201859f2] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#rawResponse()
+03:16:24.434 [XNIO-6 I/O-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:24.434 [XNIO-6 I/O-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [201859f2] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:24.434 [XNIO-6 I/O-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [201859f2] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:24.435 [XNIO-6 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [201859f2] Completed 200 OK
+03:16:24.435 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:24.435 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:24.436 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:24.436 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:24.445 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:24.554 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:24.586 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:24.605 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:24.606 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:24.606 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@7e97bd75{/,null,AVAILABLE}
+03:16:24.607 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:24.607 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:24.613 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@510d23fe{HTTP/1.1, (http/1.1)}{0.0.0.0:56243}
+03:16:24.613 [Test worker] INFO  o.e.j.s.Server - Started @38283ms
+03:16:24.613 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56243(0 millis).
+03:16:24.613 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56243/response/flux
+03:16:24.614 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:24.617 [qtp1528367166-342] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [662b6726] HTTP GET "/response/flux"
+03:16:24.617 [qtp1528367166-342] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [662b6726] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#fluxResponse()
+03:16:24.619 [qtp1528367166-342] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:24.619 [qtp1528367166-342] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [662b6726] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:24.620 [qtp1528367166-342] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [662b6726] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:24.621 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:24.622 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:24.622 [qtp1528367166-342] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [662b6726] Completed 200 OK
+03:16:24.623 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:24.623 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7e97bd75{/,null,UNAVAILABLE}
+03:16:24.627 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@510d23fe{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:24.629 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:24.764 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:24.818 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:24.861 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:24.862 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:24.867 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56249(0 millis).
+03:16:24.867 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56249/response/flux
+03:16:24.867 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:24.871 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [40f3eac0-7] HTTP GET "/response/flux"
+03:16:24.872 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [40f3eac0-7] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#fluxResponse()
+03:16:24.873 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:24.873 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [40f3eac0-7] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:24.874 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [40f3eac0-7] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:24.876 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [40f3eac0-7] Completed 200 OK
+03:16:24.876 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:24.876 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:24.877 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:24.877 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:24.942 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:24.976 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:25.007 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:25.009 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:25.025 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56251(0 millis).
+03:16:25.026 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56251/response/flux
+03:16:25.026 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:25.036 [http-nio-auto-7-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [14449007] HTTP GET "/response/flux"
+03:16:25.036 [http-nio-auto-7-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [14449007] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#fluxResponse()
+03:16:25.039 [http-nio-auto-7-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:25.039 [http-nio-auto-7-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [14449007] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:25.040 [http-nio-auto-7-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [14449007] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:25.041 [http-nio-auto-7-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [14449007] Completed 200 OK
+03:16:25.041 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:25.041 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:25.042 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:25.308 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:25.382 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:25.414 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:25.432 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:25.432 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:25.433 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:25.441 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56268(0 millis).
+03:16:25.441 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56268/response/flux
+03:16:25.442 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:25.447 [XNIO-7 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [697d6a2c] HTTP GET "/response/flux"
+03:16:25.447 [XNIO-7 I/O-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [697d6a2c] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#fluxResponse()
+03:16:25.450 [XNIO-7 I/O-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:25.450 [XNIO-7 I/O-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [697d6a2c] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:25.451 [XNIO-7 I/O-3] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [697d6a2c] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:25.451 [XNIO-7 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [697d6a2c] Completed 200 OK
+03:16:25.451 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:25.452 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:25.452 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:25.452 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:25.456 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:25.508 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:25.537 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:25.565 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:25.566 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:25.566 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@260cf77b{/,null,AVAILABLE}
+03:16:25.566 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:25.567 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:25.573 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@49f0e0b6{HTTP/1.1, (http/1.1)}{0.0.0.0:56270}
+03:16:25.573 [Test worker] INFO  o.e.j.s.Server - Started @39243ms
+03:16:25.573 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56270(0 millis).
+03:16:25.573 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56270/request/entity/flux
+03:16:25.573 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:25.574 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@1e662ddb, org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@53673e46]] as "application/json"
+03:16:25.577 [qtp693483326-383] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [71b8fd39] HTTP POST "/request/entity/flux"
+03:16:25.578 [qtp693483326-383] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [71b8fd39] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#entityFluxRequest(HttpEntity)
+03:16:25.579 [qtp693483326-383] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [71b8fd39] Content-Type:application/json
+03:16:25.580 [qtp693483326-383] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [71b8fd39] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:25.582 [qtp693483326-383] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:25.582 [qtp693483326-383] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [71b8fd39] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:25.583 [qtp693483326-383] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [71b8fd39] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:25.583 [qtp693483326-383] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [71b8fd39] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:25.583 [qtp693483326-383] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [71b8fd39] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:25.584 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:25.584 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:25.584 [qtp693483326-383] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [71b8fd39] Completed 200 OK
+03:16:25.585 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:25.585 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@260cf77b{/,null,UNAVAILABLE}
+03:16:25.588 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@49f0e0b6{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:25.590 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:25.646 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:25.676 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:25.706 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:25.706 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:25.708 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56276(0 millis).
+03:16:25.708 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56276/request/entity/flux
+03:16:25.708 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:25.709 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@74101cf8, org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@42bc7e55]] as "application/json"
+03:16:25.712 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [f01ae225-8] HTTP POST "/request/entity/flux"
+03:16:25.713 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [f01ae225-8] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#entityFluxRequest(HttpEntity)
+03:16:25.714 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [f01ae225-8] Content-Type:application/json
+03:16:25.715 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [f01ae225-8] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:25.716 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:25.716 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [f01ae225-8] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:25.717 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [f01ae225-8] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:25.717 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [f01ae225-8] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:25.718 [reactor-http-nio-4] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [f01ae225-8] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:25.719 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:25.720 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:25.720 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [f01ae225-8] Completed 200 OK
+03:16:25.720 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:25.721 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:25.780 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:25.812 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:25.836 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:25.837 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:25.853 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56278(0 millis).
+03:16:25.854 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56278/request/entity/flux
+03:16:25.854 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:25.854 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@488ba2dc, org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@e50e715]] as "application/json"
+03:16:25.860 [http-nio-auto-8-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4348e7cf] HTTP POST "/request/entity/flux"
+03:16:25.861 [http-nio-auto-8-exec-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [4348e7cf] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#entityFluxRequest(HttpEntity)
+03:16:25.864 [http-nio-auto-8-exec-2] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [4348e7cf] Content-Type:application/json
+03:16:25.865 [http-nio-auto-8-exec-2] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [4348e7cf] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:25.868 [http-nio-auto-8-exec-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:25.868 [http-nio-auto-8-exec-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [4348e7cf] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:25.869 [http-nio-auto-8-exec-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [4348e7cf] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:25.869 [http-nio-auto-8-exec-2] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [4348e7cf] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:25.869 [http-nio-auto-8-exec-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [4348e7cf] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:25.870 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:25.871 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:25.871 [http-nio-auto-8-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4348e7cf] Completed 200 OK
+03:16:25.871 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:26.096 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:26.155 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:26.180 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:26.201 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:26.201 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:26.201 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:26.210 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56295(0 millis).
+03:16:26.211 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:56295/request/entity/flux
+03:16:26.211 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:26.211 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@5d0b60e5, org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean@6aceca86]] as "application/json"
+03:16:26.214 [XNIO-8 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [348d169a] HTTP POST "/request/entity/flux"
+03:16:26.215 [XNIO-8 I/O-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [348d169a] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#entityFluxRequest(HttpEntity)
+03:16:26.216 [XNIO-8 I/O-1] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [348d169a] Content-Type:application/json
+03:16:26.216 [XNIO-8 I/O-1] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [348d169a] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:26.218 [XNIO-8 I/O-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:26.218 [XNIO-8 I/O-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [348d169a] 0..N [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:26.219 [XNIO-8 I/O-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [348d169a] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:26.219 [XNIO-8 I/O-1] DEBUG o.s.h.c.j.Jackson2JsonDecoder - [348d169a] Decoded [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:26.220 [XNIO-8 I/O-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [348d169a] Encoding [[org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewB (truncated)...]
+03:16:26.220 [XNIO-8 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [348d169a] Completed 200 OK
+03:16:26.221 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:26.221 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:26.221 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:26.221 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:26.224 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:26.285 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:26.312 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:26.333 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:26.334 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:26.334 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@218cbec9{/,null,AVAILABLE}
+03:16:26.335 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:26.335 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_251-b08
+03:16:26.341 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@53beb3ec{HTTP/1.1, (http/1.1)}{0.0.0.0:56297}
+03:16:26.341 [Test worker] INFO  o.e.j.s.Server - Started @40011ms
+03:16:26.341 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 56297(0 millis).
+03:16:26.341 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56297/response/mono
+03:16:26.341 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:26.344 [qtp709623618-423] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [27c58291] HTTP GET "/response/mono"
+03:16:26.344 [qtp709623618-423] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [27c58291] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoResponse()
+03:16:26.347 [qtp709623618-423] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:26.347 [qtp709623618-423] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [27c58291] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:26.347 [qtp709623618-423] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [27c58291] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:26.348 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:26.348 [qtp709623618-423] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [27c58291] Completed 200 OK
+03:16:26.348 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:26.349 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:26.349 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@218cbec9{/,null,UNAVAILABLE}
+03:16:26.351 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@53beb3ec{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:26.352 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:26.417 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:26.456 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:26.489 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:26.489 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:26.491 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 56303(0 millis).
+03:16:26.491 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56303/response/mono
+03:16:26.492 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:26.496 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [f2adcdd8-9] HTTP GET "/response/mono"
+03:16:26.497 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [f2adcdd8-9] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoResponse()
+03:16:26.499 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:26.499 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [f2adcdd8-9] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:26.500 [reactor-http-nio-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [f2adcdd8-9] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:26.501 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:26.501 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [f2adcdd8-9] Completed 200 OK
+03:16:26.501 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:26.502 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:26.502 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:26.562 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:26.595 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:26.622 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:26.623 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:26.639 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 56305(0 millis).
+03:16:26.639 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56305/response/mono
+03:16:26.639 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:26.649 [http-nio-auto-9-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [447c953e] HTTP GET "/response/mono"
+03:16:26.650 [http-nio-auto-9-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [447c953e] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoResponse()
+03:16:26.652 [http-nio-auto-9-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:26.652 [http-nio-auto-9-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [447c953e] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:26.652 [http-nio-auto-9-exec-1] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [447c953e] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:26.653 [http-nio-auto-9-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [447c953e] Completed 200 OK
+03:16:26.653 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:26.653 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:26.654 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:26.893 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:26.994 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+03:16:27.031 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:27.057 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:27.057 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:27.058 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:27.066 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 56322(0 millis).
+03:16:27.067 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:56322/response/mono
+03:16:27.068 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[text/plain, application/json, application/x-jackson-smile, application/*+json, */*]
+03:16:27.074 [XNIO-9 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [348b3bdd] HTTP GET "/response/mono"
+03:16:27.075 [XNIO-9 I/O-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [348b3bdd] Mapped to org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JsonViewRestController#monoResponse()
+03:16:27.077 [XNIO-9 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/json' given [application/json] and supported [application/json, application/*+json, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:27.077 [XNIO-9 I/O-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [348b3bdd] 0..1 [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBean]
+03:16:27.077 [XNIO-9 I/O-2] DEBUG o.s.h.c.j.Jackson2JsonEncoder - [348b3bdd] Encoding [org.springframework.web.reactive.result.method.annotation.JacksonHintsIntegrationTests$JacksonViewBe (truncated)...]
+03:16:27.078 [XNIO-9 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [348b3bdd] Completed 200 OK
+03:16:27.078 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:16:27.078 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [java.lang.String] as "application/json"
+03:16:27.079 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:27.079 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:27.081 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

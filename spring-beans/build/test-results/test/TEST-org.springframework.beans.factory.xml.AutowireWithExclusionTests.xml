@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.beans.factory.xml.AutowireWithExclusionTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-06T04:33:41" hostname="DESKTOP-VGJP1PJ" time="0.207">
+  <properties/>
+  <testcase name="byTypeAutowireWithInclusion()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.07"/>
+  <testcase name="byTypeAutowireWithAutoSelfExclusion()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.018"/>
+  <testcase name="byTypeAutowireWithPrimaryOverridingParentFactory()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.024"/>
+  <testcase name="constructorAutowireWithAutoSelfExclusion()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.013"/>
+  <testcase name="constructorAutowireWithExclusion()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.012"/>
+  <testcase name="byTypeAutowireWithExclusionInParentFactory()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.012"/>
+  <testcase name="byTypeAutowireWithPrimaryInParentAndChild()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.013"/>
+  <testcase name="byTypeAutowireWithPrimaryInParentFactory()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.014"/>
+  <testcase name="byTypeAutowireWithExclusion()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.009"/>
+  <testcase name="byTypeAutowireWithSelectiveInclusion()" classname="org.springframework.beans.factory.xml.AutowireWithExclusionTests" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

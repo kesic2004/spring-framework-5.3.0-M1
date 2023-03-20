@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.validation.beanvalidation.ValidatorFactoryTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:18:39" hostname="DESKTOP-VGJP1PJ" time="0.962">
+  <properties/>
+  <testcase name="testValidationWithOptionalField()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.014"/>
+  <testcase name="testSpringValidationFieldType()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.131"/>
+  <testcase name="testSpringValidationWithErrorInListElement()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.104"/>
+  <testcase name="testSpringValidationWithClassLevel()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.061"/>
+  <testcase name="testInnerBeanValidation()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.014"/>
+  <testcase name="testSpringValidationWithErrorInSetElement()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.14"/>
+  <testcase name="testSpringValidationWithAutowiredValidator()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.114"/>
+  <testcase name="testSimpleValidation()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.092"/>
+  <testcase name="testListValidation()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.016"/>
+  <testcase name="testSimpleValidationWithClassLevel()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.08"/>
+  <testcase name="testSimpleValidationWithCustomProvider()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.145"/>
+  <testcase name="testSpringValidation()" classname="org.springframework.validation.beanvalidation.ValidatorFactoryTests" time="0.046"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

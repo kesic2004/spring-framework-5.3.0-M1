@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:18" hostname="DESKTOP-VGJP1PJ" time="0.008">
+  <properties/>
+  <testcase name="handleNestedResponseStatusException()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="unresolvedException()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="handleResponseStatusExceptionWithHeaders()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="handleMethodNotAllowed()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="responseCommitted()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="handleResponseStatusException()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <system-out><![CDATA[03:31:18.135 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [206c256b] Resolved [Exception: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST ""] for HTTP GET /
+03:31:18.138 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [78a6dfca] Resolved [NotAcceptableStatusException: 406 NOT_ACCEPTABLE "Could not find acceptable representation"] for HTTP GET /
+03:31:18.139 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [30f3ecf1] Resolved [MethodNotAllowedException: 405 METHOD_NOT_ALLOWED "Request method 'PATCH' not supported"] for HTTP GET /
+03:31:18.142 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [1fcb4475] Resolved [ResponseStatusException: 400 BAD_REQUEST ""] for HTTP GET /
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

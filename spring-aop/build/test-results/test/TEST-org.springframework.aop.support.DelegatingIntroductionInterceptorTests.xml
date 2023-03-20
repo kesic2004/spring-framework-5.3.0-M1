@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-06T04:25:25" hostname="DESKTOP-VGJP1PJ" time="0.173">
+  <properties/>
+  <testcase name="testIntroductionInterceptorWithSuperInterface()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.016"/>
+  <testcase name="testIntroductionMasksTargetImplementation()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.003"/>
+  <testcase name="testIntroductionInterceptorWithInterfaceHierarchy()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.006"/>
+  <testcase name="testIntroductionInterceptorDoesntReplaceToString()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.024"/>
+  <testcase name="testSerializableDelegatingIntroductionInterceptorSerializable()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.012"/>
+  <testcase name="testDelegateReturnsThisIsMassagedToReturnProxy()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.023"/>
+  <testcase name="testAutomaticInterfaceRecognitionInDelegate()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.052"/>
+  <testcase name="testNullTarget()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.0"/>
+  <testcase name="testIntroductionInterceptorWithDelegation()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.015"/>
+  <testcase name="testAutomaticInterfaceRecognitionInSubclass()" classname="org.springframework.aop.support.DelegatingIntroductionInterceptorTests" time="0.02"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

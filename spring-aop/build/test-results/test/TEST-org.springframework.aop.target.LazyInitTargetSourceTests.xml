@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.aop.target.LazyInitTargetSourceTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-06T04:25:26" hostname="DESKTOP-VGJP1PJ" time="0.177">
+  <properties/>
+  <testcase name="testLazyInitFactoryBeanTargetSource()" classname="org.springframework.aop.target.LazyInitTargetSourceTests" time="0.137"/>
+  <testcase name="testCustomLazyInitSingletonTargetSource()" classname="org.springframework.aop.target.LazyInitTargetSourceTests" time="0.018"/>
+  <testcase name="testLazyInitSingletonTargetSource()" classname="org.springframework.aop.target.LazyInitTargetSourceTests" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

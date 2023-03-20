@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.view.AbstractViewTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:15:18" hostname="DESKTOP-VGJP1PJ" time="0.103">
+  <properties/>
+  <testcase name="resolveAsyncAttributes()" classname="org.springframework.web.reactive.result.view.AbstractViewTests" time="0.103"/>
+  <system-out><![CDATA[03:15:18.727 [Test worker] DEBUG o.s.w.r.r.v.AbstractViewTests$TestView - [1a29eccf] View [TestView], model {attr5=MonoEmpty, attr2=FluxConcatMap, attr1=MonoDelayElement, attr4=io.reactivex.rxjava3.internal.operators.observable.ObservableFromArray@7263307d, attr3=io.reactivex.rxjava3.internal.operators.single.SingleJust@635f088b}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

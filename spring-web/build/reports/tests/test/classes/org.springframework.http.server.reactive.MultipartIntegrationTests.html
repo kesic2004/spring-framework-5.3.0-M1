@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MultipartIntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MultipartIntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.http.server.reactive.html">org.springframework.http.server.reactive</a> &gt; MultipartIntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.320s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[1] org.springframework.web.testfixture.http.server.reactive.bootstrap.JettyHttpServer@6f0b9115</td>
+<td class="success">getFormParts(HttpServer)[1]</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] org.springframework.web.testfixture.http.server.reactive.bootstrap.ReactorHttpServer@71806bc6</td>
+<td class="success">getFormParts(HttpServer)[2]</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] org.springframework.web.testfixture.http.server.reactive.bootstrap.TomcatHttpServer@5f3e89c7</td>
+<td class="success">getFormParts(HttpServer)[3]</td>
+<td class="success">0.226s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] org.springframework.web.testfixture.http.server.reactive.bootstrap.UndertowHttpServer@35dc9c43</td>
+<td class="success">getFormParts(HttpServer)[4]</td>
+<td class="success">0.041s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>03:30:56.656 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:30:56.662 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 59766(0 millis).
+03:30:56.666 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:59766/form-parts
+03:30:56.667 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+03:30:56.668 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [{fooPart=[&lt;class path resource [org/springframework/http/codec/multipart/foo.txt],[Content-Type:&quot;text/plain&quot;]&gt;], barPart=[&lt;bar,[]&gt;]}] as &quot;multipart/form-data&quot;
+03:30:56.676 [qtp1353407504-660] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6ad625c1] HTTP POST &quot;/form-parts&quot;
+03:30:56.679 [qtp1353407504-660] DEBUG o.s.w.HttpLogging - [6ad625c1] Parsed parts [barPart, fooPart] (content masked)
+03:30:56.680 [qtp1353407504-660] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6ad625c1] Completed 200 OK
+03:30:56.681 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:56.681 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:30:56.683 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:30:56.684 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:30:56.685 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 59772(0 millis).
+03:30:56.689 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:59772/form-parts
+03:30:56.690 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+03:30:56.690 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [{fooPart=[&lt;class path resource [org/springframework/http/codec/multipart/foo.txt],[Content-Type:&quot;text/plain&quot;]&gt;], barPart=[&lt;bar,[]&gt;]}] as &quot;multipart/form-data&quot;
+03:30:56.695 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [01b4430f-7] HTTP POST &quot;/form-parts&quot;
+03:30:56.698 [reactor-http-nio-2] DEBUG o.s.w.HttpLogging - [01b4430f-7] Parsed parts [barPart, fooPart] (content masked)
+03:30:56.699 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [01b4430f-7] Completed 200 OK
+03:30:56.700 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:56.700 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:30:56.701 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:30:56.702 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:30:56.717 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 59775(0 millis).
+03:30:56.720 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:59775/form-parts
+03:30:56.721 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+03:30:56.721 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [{fooPart=[&lt;class path resource [org/springframework/http/codec/multipart/foo.txt],[Content-Type:&quot;text/plain&quot;]&gt;], barPart=[&lt;bar,[]&gt;]}] as &quot;multipart/form-data&quot;
+03:30:56.728 [http-nio-auto-7-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1fb8cef6] HTTP POST &quot;/form-parts&quot;
+03:30:56.729 [http-nio-auto-7-exec-1] DEBUG o.s.w.HttpLogging - [1fb8cef6] Parsed parts [barPart, fooPart] (content masked)
+03:30:56.730 [http-nio-auto-7-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1fb8cef6] Completed 200 OK
+03:30:56.731 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:56.731 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:30:56.927 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:30:56.928 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:30:56.939 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 59792(0 millis).
+03:30:56.943 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:59792/form-parts
+03:30:56.943 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+03:30:56.944 [Test worker] DEBUG o.s.w.c.RestTemplate - Writing [{fooPart=[&lt;class path resource [org/springframework/http/codec/multipart/foo.txt],[Content-Type:&quot;text/plain&quot;]&gt;], barPart=[&lt;bar,[]&gt;]}] as &quot;multipart/form-data&quot;
+03:30:56.952 [XNIO-7 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [35df9467] HTTP POST &quot;/form-parts&quot;
+03:30:56.953 [XNIO-7 I/O-2] DEBUG o.s.w.HttpLogging - [35df9467] Parsed parts [barPart, fooPart] (content masked)
+03:30:56.953 [XNIO-7 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [35df9467] Completed 200 OK
+03:30:56.957 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:56.958 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:30:56.969 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.36]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler [&quot;http-nio-auto-7&quot;]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler [&quot;http-nio-auto-7-59775&quot;]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler [&quot;http-nio-auto-7-59775&quot;]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 06, 2023 3:30:56 AM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+WARNING: The web application [ROOT] appears to have started a thread named [boundedElastic-evictor-48] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler [&quot;http-nio-auto-7-59775&quot;]
+Mar 06, 2023 3:30:56 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler [&quot;http-nio-auto-7-59775&quot;]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5</a> at Mar 6, 2023 3:31:24 AM</p>
+</div>
+</div>
+</body>
+</html>

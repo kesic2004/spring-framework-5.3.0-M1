@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.server.reactive.ServerHttpRequestIntegrationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:30:57" hostname="DESKTOP-VGJP1PJ" time="0.25">
+  <properties/>
+  <testcase name="checkUri(HttpServer)[1]" classname="org.springframework.http.server.reactive.ServerHttpRequestIntegrationTests" time="0.015"/>
+  <testcase name="checkUri(HttpServer)[2]" classname="org.springframework.http.server.reactive.ServerHttpRequestIntegrationTests" time="0.009"/>
+  <testcase name="checkUri(HttpServer)[3]" classname="org.springframework.http.server.reactive.ServerHttpRequestIntegrationTests" time="0.207"/>
+  <testcase name="checkUri(HttpServer)[4]" classname="org.springframework.http.server.reactive.ServerHttpRequestIntegrationTests" time="0.018"/>
+  <system-out><![CDATA[03:30:57.239 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:30:57.244 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 59823(0 millis).
+03:30:57.248 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:59823/foo?param=bar
+03:30:57.248 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+03:30:57.251 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:57.252 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:30:57.254 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:30:57.255 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:30:57.256 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 59829(0 millis).
+03:30:57.258 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:59829/foo?param=bar
+03:30:57.259 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+03:30:57.262 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:57.262 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:30:57.263 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:30:57.264 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:30:57.277 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 59831(0 millis).
+03:30:57.280 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:59831/foo?param=bar
+03:30:57.281 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+03:30:57.286 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:57.286 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:30:57.470 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:30:57.471 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:30:57.480 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 59849(0 millis).
+03:30:57.483 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST http://localhost:59849/foo?param=bar
+03:30:57.484 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+03:30:57.486 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+03:30:57.487 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:30:57.489 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[Mar 06, 2023 3:30:57 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 06, 2023 3:30:57 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.36]
+Mar 06, 2023 3:30:57 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-9"]
+Mar 06, 2023 3:30:57 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-9-59831"]
+Mar 06, 2023 3:30:57 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-9-59831"]
+Mar 06, 2023 3:30:57 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 06, 2023 3:30:57 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-9-59831"]
+Mar 06, 2023 3:30:57 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-9-59831"]
+]]></system-err>
+</testsuite>

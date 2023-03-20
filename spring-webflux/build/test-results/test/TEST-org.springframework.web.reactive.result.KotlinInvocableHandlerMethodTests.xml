@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.KotlinInvocableHandlerMethodTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:15:43" hostname="DESKTOP-VGJP1PJ" time="1.84">
+  <properties/>
+  <testcase name="resolveArg()" classname="org.springframework.web.reactive.result.KotlinInvocableHandlerMethodTests" time="0.669"/>
+  <testcase name="voidMethodWithResponseArg()" classname="org.springframework.web.reactive.result.KotlinInvocableHandlerMethodTests" time="0.072"/>
+  <testcase name="resolveNoArgs()" classname="org.springframework.web.reactive.result.KotlinInvocableHandlerMethodTests" time="0.202"/>
+  <testcase name="invocationTargetException()" classname="org.springframework.web.reactive.result.KotlinInvocableHandlerMethodTests" time="0.04"/>
+  <testcase name="resolveNoArg()" classname="org.springframework.web.reactive.result.KotlinInvocableHandlerMethodTests" time="0.344"/>
+  <testcase name="responseStatusAnnotation()" classname="org.springframework.web.reactive.result.KotlinInvocableHandlerMethodTests" time="0.326"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

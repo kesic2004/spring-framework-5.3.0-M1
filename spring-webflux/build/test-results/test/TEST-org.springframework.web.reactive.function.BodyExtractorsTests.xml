@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.BodyExtractorsTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:12:09" hostname="DESKTOP-VGJP1PJ" time="1.073">
+  <properties/>
+  <testcase name="toDataBuffers()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.069"/>
+  <testcase name="toParts()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.193"/>
+  <testcase name="toMonoVoidAsClientWithEmptyBody()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.021"/>
+  <testcase name="toFlux()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.084"/>
+  <testcase name="toMono()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.017"/>
+  <testcase name="toFluxUnacceptable()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.028"/>
+  <testcase name="unsupportedMediaTypeShouldConsumeAndCancel()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.438"/>
+  <testcase name="toMonoParameterizedTypeReference()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.076"/>
+  <testcase name="toFormData()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.028"/>
+  <testcase name="toMonoWithHints()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.009"/>
+  <testcase name="toMonoWithEmptyBodyAndNoContentType()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.007"/>
+  <testcase name="toMonoVoidAsClientShouldConsumeAndCancel()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.04"/>
+  <testcase name="toFluxWithHints()" classname="org.springframework.web.reactive.function.BodyExtractorsTests" time="0.049"/>
+  <system-out><![CDATA[03:12:09.527 [Test worker] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - Parsed parts 'text' (content masked)
+03:12:09.531 [Test worker] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - Parsed parts 'file1' (content masked)
+03:12:09.532 [Test worker] DEBUG o.s.h.c.m.SynchronossPartHttpMessageReader - Parsed parts 'file2' (content masked)
+03:12:09.663 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+03:12:09.680 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "foo"
+03:12:10.222 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - Decoded [{username=foo, password=bar}]
+03:12:10.256 [Test worker] DEBUG o.s.h.c.FormHttpMessageReader - Read form fields [name 1, name 2, name 3] (content masked)
+03:12:10.269 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - Decoded [org.springframework.web.reactive.function.BodyExtractorsTests$User@3e406f5b]
+03:12:10.364 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - Decoded [org.springframework.web.reactive.function.BodyExtractorsTests$User@b069a3c]
+03:12:10.367 [Test worker] DEBUG o.s.h.c.j.Jackson2JsonDecoder - Decoded [org.springframework.web.reactive.function.BodyExtractorsTests$User@461abce7]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

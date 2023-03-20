@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:16:15" hostname="DESKTOP-VGJP1PJ" time="11.532">
+  <properties/>
+  <testcase name="runTestsInParallel()[1]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="3.798"/>
+  <testcase name="runTestsInParallel()[2]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="1.652"/>
+  <testcase name="runTestsInParallel()[3]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="1.683"/>
+  <testcase name="runTestsInParallel()[4]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.93"/>
+  <testcase name="runTestsInParallel()[5]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.702"/>
+  <testcase name="runTestsInParallel()[6]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.802"/>
+  <testcase name="runTestsInParallel()[7]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.512"/>
+  <testcase name="runTestsInParallel()[8]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.419"/>
+  <testcase name="runTestsInParallel()[9]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.527"/>
+  <testcase name="runTestsInParallel()[10]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.505"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

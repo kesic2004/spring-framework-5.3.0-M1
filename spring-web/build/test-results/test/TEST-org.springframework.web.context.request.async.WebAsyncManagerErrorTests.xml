@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:05" hostname="DESKTOP-VGJP1PJ" time="0.074">
+  <properties/>
+  <testcase name="startCallableProcessingAfterException()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.03"/>
+  <testcase name="startCallableProcessingErrorAndComplete()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.001"/>
+  <testcase name="startDeferredResultProcessingErrorAndResumeWithDefaultResult()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.002"/>
+  <testcase name="startDeferredResultProcessingAfterException()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.013"/>
+  <testcase name="startDeferredResultProcessingErrorAndResumeThroughInterceptor()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.001"/>
+  <testcase name="startCallableProcessingErrorAndResumeThroughCallback()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.002"/>
+  <testcase name="startCallableProcessingErrorAndResumeThroughInterceptor()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.001"/>
+  <testcase name="startDeferredResultProcessingErrorAndComplete()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.021"/>
+  <testcase name="startDeferredResultProcessingErrorAndResumeThroughCallback()" classname="org.springframework.web.context.request.async.WebAsyncManagerErrorTests" time="0.002"/>
+  <system-out><![CDATA[03:31:05.727 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.727 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request error for /test: java.lang.Exception
+03:31:05.728 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.729 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.729 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request error for /test: java.lang.Exception
+03:31:05.729 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.731 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.732 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.745 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.745 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.747 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.747 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.748 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.749 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request error for /test: java.lang.Exception
+03:31:05.749 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to /test
+03:31:05.749 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.750 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async request error for /test: java.lang.Exception
+03:31:05.750 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to /test
+03:31:05.770 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.770 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+03:31:05.773 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.773 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to /test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

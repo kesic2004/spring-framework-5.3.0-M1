@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.simp.stomp.ReactorNettyTcpStompClientTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:32:46" hostname="DESKTOP-VGJP1PJ" time="3.133">
+  <properties/>
+  <testcase name="publishSubscribe()" classname="org.springframework.messaging.simp.stomp.ReactorNettyTcpStompClientTests" time="3.133"/>
+  <system-out><![CDATA[02:32:46.448 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:32:46.796 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:1) is starting
+02:32:46.846 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:62370
+02:32:46.847 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:62370 Started
+02:32:46.849 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:1) started
+02:32:46.850 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:32:47.718 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:1) is shutting down
+02:32:49.185 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:62370 Stopped
+02:32:49.196 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:1) uptime 2.781 seconds
+02:32:49.196 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.8.0 (localhost, ID:DESKTOP-VGJP1PJ-55042-1678087966477-0:1) is shutdown
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

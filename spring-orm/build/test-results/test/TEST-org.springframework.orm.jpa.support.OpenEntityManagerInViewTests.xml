@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.orm.jpa.support.OpenEntityManagerInViewTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:56:48" hostname="DESKTOP-VGJP1PJ" time="0.275">
+  <properties/>
+  <testcase name="testOpenEntityManagerInViewInterceptorAsyncScenario()" classname="org.springframework.orm.jpa.support.OpenEntityManagerInViewTests" time="0.039"/>
+  <testcase name="testOpenEntityManagerInViewInterceptor()" classname="org.springframework.orm.jpa.support.OpenEntityManagerInViewTests" time="0.002"/>
+  <testcase name="testOpenEntityManagerInViewFilter()" classname="org.springframework.orm.jpa.support.OpenEntityManagerInViewTests" time="0.174"/>
+  <testcase name="testOpenEntityManagerInViewInterceptorAsyncTimeoutScenario()" classname="org.springframework.orm.jpa.support.OpenEntityManagerInViewTests" time="0.005"/>
+  <testcase name="testOpenEntityManagerInViewFilterAsyncScenario()" classname="org.springframework.orm.jpa.support.OpenEntityManagerInViewTests" time="0.048"/>
+  <testcase name="testOpenEntityManagerInViewInterceptorAsyncErrorScenario()" classname="org.springframework.orm.jpa.support.OpenEntityManagerInViewTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

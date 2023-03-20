@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:16:28" hostname="DESKTOP-VGJP1PJ" time="7.246">
+  <properties/>
+  <testcase name="bodyToMono with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="5.354"/>
+  <testcase name="bodyToFlow with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="1.205"/>
+  <testcase name="awaitEntityList()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.316"/>
+  <testcase name="bodyToFlux with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.019"/>
+  <testcase name="awaitEntity()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.047"/>
+  <testcase name="awaitBody()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.095"/>
+  <testcase name="ResponseSpec#toEntityList with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.024"/>
+  <testcase name="toEntity with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.066"/>
+  <testcase name="awaitBodyOrNull()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

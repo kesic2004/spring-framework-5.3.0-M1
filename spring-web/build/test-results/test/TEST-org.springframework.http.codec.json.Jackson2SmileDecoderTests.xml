@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.json.Jackson2SmileDecoderTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:30:40" hostname="DESKTOP-VGJP1PJ" time="0.029">
+  <properties/>
+  <testcase name="decodeToMono()" classname="org.springframework.http.codec.json.Jackson2SmileDecoderTests" time="0.015"/>
+  <testcase name="decode()" classname="org.springframework.http.codec.json.Jackson2SmileDecoderTests" time="0.01"/>
+  <testcase name="canDecode()" classname="org.springframework.http.codec.json.Jackson2SmileDecoderTests" time="0.002"/>
+  <system-out><![CDATA[03:30:40.471 [Test worker] DEBUG o.s.w.HttpLogging - Decoded [[Pojo[foo='f1', bar='b1'], Pojo[foo='f2', bar='b2']]]
+03:30:40.479 [Test worker] DEBUG o.s.w.HttpLogging - Decoded [Pojo[foo='f1', bar='b1']]
+03:30:40.480 [Test worker] DEBUG o.s.w.HttpLogging - Decoded [Pojo[foo='f2', bar='b2']]
+03:30:40.481 [Test worker] DEBUG o.s.w.HttpLogging - Decoded [Pojo[foo='f1', bar='b1']]
+03:30:40.482 [Test worker] DEBUG o.s.w.HttpLogging - Decoded [Pojo[foo='f1', bar='b1']]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

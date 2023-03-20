@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.async.WebAsyncManagerTests" tests="16" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:05" hostname="DESKTOP-VGJP1PJ" time="0.062">
+  <properties/>
+  <testcase name="startCallableProcessingNullInput()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.024"/>
+  <testcase name="startCallableProcessingPostProcessContinueAfterException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.005"/>
+  <testcase name="startDeferredResultProcessingPreProcessException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.003"/>
+  <testcase name="setAsyncWebRequestAfterAsyncStarted()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.001"/>
+  <testcase name="isConcurrentHandlingStarted()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.001"/>
+  <testcase name="startCallableProcessingPreProcessException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.003"/>
+  <testcase name="startCallableProcessingWithAsyncTask()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.007"/>
+  <testcase name="startCallableProcessing()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.002"/>
+  <testcase name="startDeferredResultProcessingNullInput()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.001"/>
+  <testcase name="startAsyncProcessingWithoutAsyncWebRequest()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.001"/>
+  <testcase name="startDeferredResultProcessing()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.002"/>
+  <testcase name="startCallableProcessingBeforeConcurrentHandlingException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.001"/>
+  <testcase name="startCallableProcessingCallableException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.001"/>
+  <testcase name="startCallableProcessingPostProcessException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.002"/>
+  <testcase name="startDeferredResultProcessingPostProcessException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.002"/>
+  <testcase name="startDeferredResultProcessingBeforeConcurrentHandlingException()" classname="org.springframework.web.context.request.async.WebAsyncManagerTests" time="0.002"/>
+  <system-out><![CDATA[03:31:05.800 [Test worker] WARN  o.s.w.c.r.a.WebAsyncManager - 
+!!!
+An Executor is required to handle java.util.concurrent.Callable return values.
+Please, configure a TaskExecutor in the MVC config under "async support".
+The SyncTaskExecutor currently in use is not suitable under load.
+-------------------------------
+Request URI: ''
+!!!
+03:31:05.800 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.801 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to 
+03:31:05.805 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.805 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to 
+03:31:05.810 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.810 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to 
+03:31:05.818 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.820 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.820 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to 
+03:31:05.825 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.825 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async result set, dispatch to 
+03:31:05.828 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.829 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to 
+03:31:05.831 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.831 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to 
+03:31:05.832 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Started async request
+03:31:05.833 [Test worker] DEBUG o.s.w.c.r.a.WebAsyncManager - Async error, dispatch to 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

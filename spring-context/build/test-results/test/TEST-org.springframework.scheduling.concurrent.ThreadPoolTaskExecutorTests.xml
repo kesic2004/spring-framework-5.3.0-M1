@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:18:18" hostname="DESKTOP-VGJP1PJ" time="0.269">
+  <properties/>
+  <testcase name="submitCallableWithGetAfterShutdown()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.025"/>
+  <testcase name="submitListenableCallableWithGetAfterShutdown()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.002"/>
+  <testcase name="submitListenableCallable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.02"/>
+  <testcase name="executeRunnable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.023"/>
+  <testcase name="submitListenableRunnable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.018"/>
+  <testcase name="submitFailingCallable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.012"/>
+  <testcase name="submitCallable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.014"/>
+  <testcase name="submitFailingListenableCallable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.017"/>
+  <testcase name="submitRunnableWithGetAfterShutdown()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.001"/>
+  <testcase name="submitListenableRunnableWithGetAfterShutdown()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.014"/>
+  <testcase name="submitFailingRunnable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.024"/>
+  <testcase name="submitRunnable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.042"/>
+  <testcase name="executeFailingRunnable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.014"/>
+  <testcase name="submitFailingListenableRunnable()" classname="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutorTests" time="0.04"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

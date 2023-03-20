@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.support.AnnotationConfigWebApplicationContextTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:06" hostname="DESKTOP-VGJP1PJ" time="0.079">
+  <properties/>
+  <testcase name="withBeanNameGenerator()" classname="org.springframework.web.context.support.AnnotationConfigWebApplicationContextTests" time="0.021"/>
+  <testcase name="configLocationWithBasePackage()" classname="org.springframework.web.context.support.AnnotationConfigWebApplicationContextTests" time="0.041"/>
+  <testcase name="registerSingleClass()" classname="org.springframework.web.context.support.AnnotationConfigWebApplicationContextTests" time="0.009"/>
+  <testcase name="configLocationWithSingleClass()" classname="org.springframework.web.context.support.AnnotationConfigWebApplicationContextTests" time="0.007"/>
+  <system-out><![CDATA[03:31:06.771 [Test worker] DEBUG o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:06.787 [Test worker] DEBUG o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:06.829 [Test worker] DEBUG o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:06.832 [Test worker] DEBUG o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering component classes: [class org.springframework.web.context.support.AnnotationConfigWebApplicationContextTests$Config]
+03:31:06.839 [Test worker] DEBUG o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

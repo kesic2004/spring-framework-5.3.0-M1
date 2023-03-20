@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.socket.adapter.jetty.JettyWebSocketHandlerAdapterTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:17:03" hostname="DESKTOP-VGJP1PJ" time="2.076">
+  <properties/>
+  <testcase name="onClose()" classname="org.springframework.web.socket.adapter.jetty.JettyWebSocketHandlerAdapterTests" time="2.04"/>
+  <testcase name="onError()" classname="org.springframework.web.socket.adapter.jetty.JettyWebSocketHandlerAdapterTests" time="0.003"/>
+  <testcase name="onOpen()" classname="org.springframework.web.socket.adapter.jetty.JettyWebSocketHandlerAdapterTests" time="0.03"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

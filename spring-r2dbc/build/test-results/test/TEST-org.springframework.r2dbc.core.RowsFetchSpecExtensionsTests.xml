@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:47:30" hostname="DESKTOP-VGJP1PJ" time="0.831">
+  <properties/>
+  <testcase name="awaitOneWithValue()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.078"/>
+  <testcase name="awaitFirstOrNullWithNull()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.012"/>
+  <testcase name="allAsFlow()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.659"/>
+  <testcase name="awaitFirstOrNullWithValue()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.011"/>
+  <testcase name="awaitOneOrNullWithValue()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.01"/>
+  <testcase name="awaitOneOrNullWithNull()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.009"/>
+  <testcase name="awaitFirstWithNull()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.022"/>
+  <testcase name="awaitOneWithNull()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.012"/>
+  <testcase name="awaitFirstWithValue()" classname="org.springframework.r2dbc.core.RowsFetchSpecExtensionsTests" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

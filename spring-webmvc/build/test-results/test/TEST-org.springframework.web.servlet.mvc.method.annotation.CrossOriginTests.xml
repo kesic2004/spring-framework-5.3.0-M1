@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" tests="34" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:13:26" hostname="DESKTOP-VGJP1PJ" time="0.357">
+  <properties/>
+  <testcase name="noAnnotationWithoutOrigin(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.007"/>
+  <testcase name="noAnnotationWithoutOrigin(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.005"/>
+  <testcase name="noAnnotationPostWithOrigin(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.005"/>
+  <testcase name="noAnnotationPostWithOrigin(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="noAnnotationWithOrigin(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.002"/>
+  <testcase name="noAnnotationWithOrigin(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.025"/>
+  <testcase name="preFlightRequest(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.004"/>
+  <testcase name="preFlightRequest(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="customOriginDefinedViaPlaceholder(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="customOriginDefinedViaPlaceholder(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.002"/>
+  <testcase name="customized(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="customized(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.002"/>
+  <testcase name="defaultAnnotation(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.007"/>
+  <testcase name="defaultAnnotation(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="classLevelComposedAnnotation(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.004"/>
+  <testcase name="classLevelComposedAnnotation(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.006"/>
+  <testcase name="customOriginDefinedViaValueAttribute(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="customOriginDefinedViaValueAttribute(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.027"/>
+  <testcase name="classLevel(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.002"/>
+  <testcase name="classLevel(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.004"/>
+  <testcase name="noAnnotationWithAccessControlRequestMethod(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.026"/>
+  <testcase name="noAnnotationWithAccessControlRequestMethod(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.022"/>
+  <testcase name="preFlightRequestWithoutRequestMethodHeader(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.0"/>
+  <testcase name="preFlightRequestWithoutRequestMethodHeader(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.001"/>
+  <testcase name="noAnnotationWithPreflightRequest(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.016"/>
+  <testcase name="noAnnotationWithPreflightRequest(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.001"/>
+  <testcase name="ambiguousHeaderPreFlightRequest(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.003"/>
+  <testcase name="ambiguousHeaderPreFlightRequest(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.006"/>
+  <testcase name="methodLevelComposedAnnotation(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.001"/>
+  <testcase name="methodLevelComposedAnnotation(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.001"/>
+  <testcase name="ambiguousProducesPreFlightRequest(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.04"/>
+  <testcase name="ambiguousProducesPreFlightRequest(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.002"/>
+  <testcase name="bogusAllowCredentialsValue(TestRequestMappingInfoHandlerMapping)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.002"/>
+  <testcase name="bogusAllowCredentialsValue(TestRequestMappingInfoHandlerMapping)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.CrossOriginTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

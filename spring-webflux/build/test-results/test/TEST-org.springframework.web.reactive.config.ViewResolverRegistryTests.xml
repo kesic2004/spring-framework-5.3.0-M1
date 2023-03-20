@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.config.ViewResolverRegistryTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:16:58" hostname="DESKTOP-VGJP1PJ" time="4.234">
+  <properties/>
+  <testcase name="hasRegistrations()" classname="org.springframework.web.reactive.config.ViewResolverRegistryTests" time="2.962"/>
+  <testcase name="defaultViews()" classname="org.springframework.web.reactive.config.ViewResolverRegistryTests" time="0.794"/>
+  <testcase name="noResolvers()" classname="org.springframework.web.reactive.config.ViewResolverRegistryTests" time="0.005"/>
+  <testcase name="scriptTemplate()" classname="org.springframework.web.reactive.config.ViewResolverRegistryTests" time="0.456"/>
+  <testcase name="order()" classname="org.springframework.web.reactive.config.ViewResolverRegistryTests" time="0.002"/>
+  <testcase name="customViewResolver()" classname="org.springframework.web.reactive.config.ViewResolverRegistryTests" time="0.004"/>
+  <system-out><![CDATA[03:17:02.668 [Test worker] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

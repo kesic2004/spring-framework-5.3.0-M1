@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.filter.DelegatingFilterProxyTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:31:07" hostname="DESKTOP-VGJP1PJ" time="0.049">
+  <properties/>
+  <testcase name="testDelegatingFilterProxyNotInjectedWacServletAttrPreferred()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.006"/>
+  <testcase name="testDelegatingFilterProxyAndCustomContextAttribute()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.018"/>
+  <testcase name="testDelegatingFilterProxy()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.002"/>
+  <testcase name="testDelegatingFilterProxyWithFilterDelegateInstance()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.001"/>
+  <testcase name="testDelegatingFilterProxyWithTargetBeanNameAndNotYetRefreshedApplicationContext()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.002"/>
+  <testcase name="testDelegatingFilterProxyInjectedPreferred()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.003"/>
+  <testcase name="testDelegatingFilterProxyWithTargetBeanNameAndNoApplicationContext()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.001"/>
+  <testcase name="testDelegatingFilterProxyWithTargetBeanName()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.002"/>
+  <testcase name="testDelegatingFilterProxyWithFilterName()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.002"/>
+  <testcase name="testDelegatingFilterProxyWithTargetFilterLifecycle()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.002"/>
+  <testcase name="testDelegatingFilterProxyWithFrameworkServletContext()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.001"/>
+  <testcase name="testDelegatingFilterProxyNotInjectedWithRootPreferred()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.002"/>
+  <testcase name="testDelegatingFilterProxyWithLazyContextStartup()" classname="org.springframework.web.filter.DelegatingFilterProxyTests" time="0.003"/>
+  <system-out><![CDATA[03:31:07.102 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.105 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.108 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.125 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.126 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.127 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.128 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.130 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.131 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.131 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.133 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.135 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.137 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.138 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.138 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.140 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter 'targetFilter' configured for use
+03:31:07.140 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.142 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.143 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.144 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.145 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.146 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+03:31:07.148 [Test worker] DEBUG o.s.w.f.DelegatingFilterProxy - Filter '' configured for use
+03:31:07.148 [Test worker] DEBUG o.s.w.c.s.StaticWebApplicationContext - Refreshing Root WebApplicationContext
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" tests="22" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:33:27" hostname="DESKTOP-VGJP1PJ" time="8.793">
+  <properties/>
+  <testcase name="marshalStreamResultOutputStream()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.252"/>
+  <testcase name="marshalStaxResultEventWriter()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.03"/>
+  <testcase name="marshalEmptyDOMResult()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.057"/>
+  <testcase name="marshalStreamResultWriter()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.057"/>
+  <testcase name="marshalDOMResult()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.031"/>
+  <testcase name="marshalJaxp14StaxResultEventWriter()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.029"/>
+  <testcase name="marshalStaxResultStreamWriter()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.115"/>
+  <testcase name="marshalJaxp14StaxResultStreamWriter()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.091"/>
+  <testcase name="unmarshalSaxSourceWithXmlOptions()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="4.95"/>
+  <testcase name="marshalAWrappedObjectHoldingAnXmlElementDeclElement()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.527"/>
+  <testcase name="marshalSAXResult()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.413"/>
+  <testcase name="supportsContextPath()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.939"/>
+  <testcase name="supportsXmlRootElement()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.021"/>
+  <testcase name="marshalAttachments()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.313"/>
+  <testcase name="lazyInit()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.035"/>
+  <testcase name="properties()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.047"/>
+  <testcase name="unmarshalStreamSourceWithXmlOptions()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.04"/>
+  <testcase name="supportsPackagesToScan()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.262"/>
+  <testcase name="marshalInvalidClass()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.077"/>
+  <testcase name="testInvalidContextPath()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.217"/>
+  <testcase name="noContextPathOrClassesToBeBound()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.011"/>
+  <testcase name="supportsClassesToBeBound()" classname="org.springframework.oxm.jaxb.Jaxb2MarshallerTests" time="0.224"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

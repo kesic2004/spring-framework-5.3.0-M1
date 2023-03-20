@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" tests="18" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:18:52" hostname="DESKTOP-VGJP1PJ" time="0.045">
+  <properties/>
+  <testcase name="getHandlerHttpOptions()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.009"/>
+  <testcase name="getHandlerTestRequestParamMismatch()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.005"/>
+  <testcase name="getHandlerTestMediaTypeNotAcceptable()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.003"/>
+  <testcase name="getHandlerGlobMatch()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.002"/>
+  <testcase name="handleMatchBestMatchingPatternAttributeNoPatternsDefined()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.001"/>
+  <testcase name="getHandlerMediaTypeNotSupported()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.003"/>
+  <testcase name="getHandlerRequestMethodNotAllowed()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.002"/>
+  <testcase name="handleMatchUriTemplateVariables()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.001"/>
+  <testcase name="getHandlerBestMatch()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.002"/>
+  <testcase name="getHandlerProducibleMediaTypesAttribute()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.001"/>
+  <testcase name="handleMatchBestMatchingPatternAttribute()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.001"/>
+  <testcase name="handleMatchUriTemplateVariablesDecode()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.001"/>
+  <testcase name="getHandlerEmptyPathMatch()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.002"/>
+  <testcase name="getHandlerTestInvalidContentType()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.002"/>
+  <testcase name="getHandlerDirectMatch()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.001"/>
+  <testcase name="getHandlerRequestMethodMatchFalsePositive()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.002"/>
+  <testcase name="handleMatchMatrixVariablesDecoding()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.001"/>
+  <testcase name="handleMatchMatrixVariables()" classname="org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests" time="0.001"/>
+  <system-out><![CDATA[03:18:52.610 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [42cb9d62] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+03:18:52.611 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [e583714] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+03:18:52.612 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [151642d5] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+03:18:52.612 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [2228689d] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests$TestController#fooOptions()
+03:18:52.624 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [5ed7e05] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests$TestController#bar()
+03:18:52.634 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [3d798c7e] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests$TestController#fooParam()
+03:18:52.635 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [6429a909] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests$TestController#xmlContent()
+03:18:52.636 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [36a9bccf] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests$TestController#nonXmlContent()
+03:18:52.640 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [25a9dba9] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests$TestController#empty()
+03:18:52.641 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [48ad35b1] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests$TestController#empty()
+03:18:52.644 [Test worker] DEBUG o.s.w.r.r.m.RequestMappingInfoHandlerMappingTests$TestRequestMappingInfoHandlerMapping - [6a82a07f] Mapped to org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests$TestController#foo()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

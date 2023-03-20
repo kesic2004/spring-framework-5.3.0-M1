@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.aop.aspectj.ProceedTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:16:59" hostname="DESKTOP-VGJP1PJ" time="0.264">
+  <properties/>
+  <testcase name="testProceedWithArgsInSameAspect()" classname="org.springframework.aop.aspectj.ProceedTests" time="0.143"/>
+  <testcase name="testGetArgsIsDefensive()" classname="org.springframework.aop.aspectj.ProceedTests" time="0.023"/>
+  <testcase name="testProceedWithArgsAcrossAspects()" classname="org.springframework.aop.aspectj.ProceedTests" time="0.041"/>
+  <testcase name="testSimpleProceedWithChangedArgs()" classname="org.springframework.aop.aspectj.ProceedTests" time="0.042"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

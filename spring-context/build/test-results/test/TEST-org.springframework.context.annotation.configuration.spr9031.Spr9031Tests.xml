@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.context.annotation.configuration.spr9031.Spr9031Tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-06T07:17:43" hostname="DESKTOP-VGJP1PJ" time="0.027">
+  <properties/>
+  <testcase name="withoutAsmAnnotationProcessing()" classname="org.springframework.context.annotation.configuration.spr9031.Spr9031Tests" time="0.005"/>
+  <testcase name="withAsmAnnotationProcessing()" classname="org.springframework.context.annotation.configuration.spr9031.Spr9031Tests" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

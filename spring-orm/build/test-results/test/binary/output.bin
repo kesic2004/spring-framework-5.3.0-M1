@@ -1,0 +1,470 @@
+ê[EL Info]: 2023-03-06 02:56:42.695--ServerSession(1156410621)--EclipseLink, version: Eclipse Persistence Services - 2.7.7.v20200504-69f2c2b80d
+ó[EL Warning]: metadata: 2023-03-06 02:56:43.188--ServerSession(1156410621)--Reverting the lazy setting on the OneToOne or ManyToOne attribute [driversLicense] for the entity class [class org.springframework.orm.jpa.domain.Person] since weaving was not enabled or did not occur.
+Â[EL Fine]: sql: 2023-03-06 02:56:43.266--ServerSession(1156410621)--Connection(416671691)--CREATE TABLE PERSON (ID INTEGER NOT NULL, FIRST_NAME VARCHAR(255), LAST_NAME VARCHAR(255), DRIVERS_LICENSE_ID INTEGER, PRIMARY KEY (ID))
+æ[EL Fine]: sql: 2023-03-06 02:56:43.268--ServerSession(1156410621)--Connection(1719029436)--CREATE TABLE DRIVERS_LICENSE (ID INTEGER NOT NULL, SERIAL_NUMBER VARCHAR(255), PRIMARY KEY (ID))
+€[EL Fine]: sql: 2023-03-06 02:56:43.27--ServerSession(1156410621)--Connection(638709250)--ALTER TABLE PERSON ADD CONSTRAINT FK_PERSON_DRIVERS_LICENSE_ID FOREIGN KEY (DRIVERS_LICENSE_ID) REFERENCES DRIVERS_LICENSE (ID)
+¬[EL Fine]: sql: 2023-03-06 02:56:43.275--ServerSession(1156410621)--Connection(1446031993)--CREATE TABLE SEQUENCE (SEQ_NAME VARCHAR(50) NOT NULL, SEQ_COUNT NUMERIC(38), PRIMARY KEY (SEQ_NAME))
+é[EL Fine]: sql: 2023-03-06 02:56:43.276--ServerSession(1156410621)--Connection(602133864)--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+ù[EL Fine]: sql: 2023-03-06 02:56:43.279--ServerSession(1156410621)--Connection(1185522613)--INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values ('SEQ_GEN', 0)
+ù[EL Fine]: sql: 2023-03-06 02:56:43.567--ClientSession(695136482)--Connection(1042874412)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+	bind => [50, SEQ_GEN]
+ç[EL Fine]: sql: 2023-03-06 02:56:43.57--ClientSession(695136482)--Connection(1042874412)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+	bind => [SEQ_GEN]
+±[EL Fine]: sql: 2023-03-06 02:56:43.58--ClientSession(695136482)--Connection(593219683)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+!	bind => [1, Tony, Blair, null]
+w[EL Fine]: sql: 2023-03-06 02:56:43.588--ClientSession(695136482)--Connection(593219683)--SELECT COUNT(0) FROM person
+y[EL Fine]: sql: 2023-03-06 02:56:43.598--ServerSession(1156410621)--Connection(1577658663)--SELECT COUNT(0) FROM person
+ù[EL Fine]: sql: 2023-03-06 02:56:43.856--ServerSession(1156410621)--Connection(351085152)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+p[EL Fine]: sql: 2023-03-06 02:56:43.918--ClientSession(1378330322)--Connection(1503311322)--DELETE FROM PERSON
+≥[EL Fine]: sql: 2023-03-06 02:56:43.924--ClientSession(417840748)--Connection(1348087697)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+!	bind => [3, Tony, Blair, null]
+x[EL Fine]: sql: 2023-03-06 02:56:43.925--ClientSession(417840748)--Connection(1348087697)--SELECT COUNT(0) FROM person
+x[EL Fine]: sql: 2023-03-06 02:56:43.926--ServerSession(1156410621)--Connection(381355123)--SELECT COUNT(0) FROM person
+≥[EL Fine]: sql: 2023-03-06 02:56:43.932--ClientSession(1832533259)--Connection(245932843)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+!	bind => [4, Tony, Blair, null]
+x[EL Fine]: sql: 2023-03-06 02:56:43.934--ClientSession(1832533259)--Connection(245932843)--SELECT COUNT(0) FROM person
+≥[EL Fine]: sql: 2023-03-06 02:56:43.937--ClientSession(1049545506)--Connection(735008905)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+!	bind => [5, Tony, Blair, null]
+x[EL Fine]: sql: 2023-03-06 02:56:43.938--ClientSession(1049545506)--Connection(735008905)--SELECT COUNT(0) FROM person
+x[EL Fine]: sql: 2023-03-06 02:56:43.941--ServerSession(1156410621)--Connection(126549204)--SELECT COUNT(0) FROM person
+p[EL Fine]: sql: 2023-03-06 02:56:43.942--ClientSession(1049545506)--Connection(1314484067)--DELETE FROM PERSON
+y[EL Fine]: sql: 2023-03-06 02:56:43.944--ClientSession(1049545506)--Connection(1314484067)--SELECT COUNT(0) FROM person
+	≤[EL Fine]: sql: 2023-03-06 02:56:43.95--ClientSession(2103414015)--Connection(301555067)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+	!	bind => [6, Tony, Blair, null]
+	x[EL Fine]: sql: 2023-03-06 02:56:43.952--ClientSession(2103414015)--Connection(301555067)--SELECT COUNT(0) FROM person
+
+è[EL Info]: 2023-03-06 02:56:44.081--ServerSession(618971533)--EclipseLink, version: Eclipse Persistence Services - 2.7.7.v20200504-69f2c2b80d
+
+ñ[EL Warning]: metadata: 2023-03-06 02:56:44.082--ServerSession(618971533)--Reverting the lazy setting on the OneToOne or ManyToOne attribute [driversLicense] for the entity class [class org.springframework.orm.jpa.domain.Person] since weaving was not enabled or did not occur.
+
+å[EL Fine]: sql: 2023-03-06 02:56:44.089--ServerSession(618971533)--Connection(23013402)--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+x[EL Fine]: sql: 2023-03-06 02:56:44.128--ClientSession(1625625733)--Connection(409907734)--SELECT COUNT(0) FROM person
+ú[EL Fine]: sql: 2023-03-06 02:56:44.13--ClientSession(1625625733)--Connection(409907734)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+	bind => [50, SEQ_GEN]
+é[EL Fine]: sql: 2023-03-06 02:56:44.131--ClientSession(1625625733)--Connection(409907734)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+	bind => [SEQ_GEN]
+≥[EL Fine]: sql: 2023-03-06 02:56:44.133--ClientSession(1625625733)--Connection(409907734)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+"	bind => [51, Tony, Blair, null]
+x[EL Fine]: sql: 2023-03-06 02:56:44.134--ClientSession(1625625733)--Connection(409907734)--SELECT COUNT(0) FROM person
+x[EL Fine]: sql: 2023-03-06 02:56:44.136--ServerSession(618971533)--Connection(1508256054)--SELECT COUNT(0) FROM person
+ú[EL Fine]: sql: 2023-03-06 02:56:44.146--ServerSession(618971533)--Connection(698864919)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+x[EL Fine]: sql: 2023-03-06 02:56:44.16--ClientSession(1082399083)--Connection(1165958538)--SELECT COUNT(0) FROM person
+¥[EL Fine]: sql: 2023-03-06 02:56:44.162--ClientSession(1082399083)--Connection(1165958538)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+"	bind => [52, Tony, Blair, null]
+y[EL Fine]: sql: 2023-03-06 02:56:44.165--ClientSession(1082399083)--Connection(1165958538)--SELECT COUNT(0) FROM person
+x[EL Fine]: sql: 2023-03-06 02:56:44.166--ServerSession(618971533)--Connection(1719016019)--SELECT COUNT(0) FROM person
+y[EL Fine]: sql: 2023-03-06 02:56:44.171--ClientSession(1430081109)--Connection(1362009072)--SELECT COUNT(0) FROM person
+¥[EL Fine]: sql: 2023-03-06 02:56:44.173--ClientSession(1430081109)--Connection(1362009072)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+"	bind => [53, Tony, Blair, null]
+y[EL Fine]: sql: 2023-03-06 02:56:44.175--ClientSession(1430081109)--Connection(1362009072)--SELECT COUNT(0) FROM person
+x[EL Fine]: sql: 2023-03-06 02:56:44.177--ClientSession(263175963)--Connection(1514635706)--SELECT COUNT(0) FROM person
+≥[EL Fine]: sql: 2023-03-06 02:56:44.178--ClientSession(263175963)--Connection(1514635706)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+"	bind => [54, Tony, Blair, null]
+x[EL Fine]: sql: 2023-03-06 02:56:44.179--ClientSession(263175963)--Connection(1514635706)--SELECT COUNT(0) FROM person
+w[EL Fine]: sql: 2023-03-06 02:56:44.182--ServerSession(618971533)--Connection(491487629)--SELECT COUNT(0) FROM person
+w[EL Fine]: sql: 2023-03-06 02:56:44.187--ClientSession(262220669)--Connection(470843205)--SELECT COUNT(0) FROM person
+±[EL Fine]: sql: 2023-03-06 02:56:44.19--ClientSession(262220669)--Connection(470843205)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+"	bind => [55, Tony, Blair, null]
+w[EL Fine]: sql: 2023-03-06 02:56:44.192--ClientSession(262220669)--Connection(470843205)--SELECT COUNT(0) FROM person
+è[EL Info]: 2023-03-06 02:56:44.98--ServerSession(1899836291)--EclipseLink, version: Eclipse Persistence Services - 2.7.7.v20200504-69f2c2b80d
+ó[EL Warning]: metadata: 2023-03-06 02:56:44.981--ServerSession(1899836291)--Reverting the lazy setting on the OneToOne or ManyToOne attribute [driversLicense] for the entity class [class org.springframework.orm.jpa.domain.Person] since weaving was not enabled or did not occur.
+è[EL Fine]: sql: 2023-03-06 02:56:44.986--ServerSession(1899836291)--Connection(1136001336)--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+û[EL Fine]: sql: 2023-03-06 02:56:45.009--ServerSession(1899836291)--Connection(2083653336)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+û[EL Fine]: sql: 2023-03-06 02:56:45.011--ServerSession(1899836291)--Connection(1148490070)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+õ[EL Fine]: sql: 2023-03-06 02:56:45.05--ClientSession(587052072)--Connection(764292167)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+ ¨[EL Fine]: sql: 2023-03-06 02:56:45.068--ClientSession(1388552056)--Connection(819927601)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON WHERE (ID = ?)
+ 	bind => [666]
+!ù[EL Fine]: sql: 2023-03-06 02:56:45.074--ClientSession(1087626227)--Connection(137117934)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+!	bind => [50, SEQ_GEN]
+!é[EL Fine]: sql: 2023-03-06 02:56:45.075--ClientSession(1087626227)--Connection(137117934)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+!	bind => [SEQ_GEN]
+!≥[EL Fine]: sql: 2023-03-06 02:56:45.077--ClientSession(1087626227)--Connection(137117934)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
+!#	bind => [101, Tony, Blair, null]
+"û[EL Fine]: sql: 2023-03-06 02:56:45.088--ServerSession(1899836291)--Connection(1936044998)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+"û[EL Fine]: sql: 2023-03-06 02:56:45.091--ServerSession(1899836291)--Connection(1522658256)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+'û[EL Fine]: sql: 2023-03-06 02:56:45.163--ClientSession(1692003726)--Connection(1537429902)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+'û[EL Fine]: sql: 2023-03-06 02:56:45.164--ClientSession(1692003726)--Connection(1537429902)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+(ù[EL Fine]: sql: 2023-03-06 02:56:45.167--ServerSession(1899836291)--Connection(914974891)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+(ú[EL Fine]: sql: 2023-03-06 02:56:45.169--ServerSession(1899836291)--Connection(21459482)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
+)û[EL Fine]: sql: 2023-03-06 02:56:45.173--ClientSession(1290116001)--Connection(1988683653)--SELECT ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID FROM PERSON
++õ[EL Fine]: sql: 2023-03-06 02:56:45.184--ClientSession(840878770)--Connection(59567992)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
++	bind => [50, SEQ_GEN]
++å[EL Fine]: sql: 2023-03-06 02:56:45.185--ClientSession(840878770)--Connection(59567992)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
++	bind => [SEQ_GEN]
++ò[EL Fine]: sql: 2023-03-06 02:56:45.186--ClientSession(840878770)--Connection(59567992)--INSERT INTO DRIVERS_LICENSE (ID, SERIAL_NUMBER) VALUES (?, ?)
++	bind => [0, 8439DK]
++±[EL Fine]: sql: 2023-03-06 02:56:45.187--ClientSession(840878770)--Connection(59567992)--INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, DRIVERS_LICENSE_ID) VALUES (?, ?, ?, ?)
++ 	bind => [101, Tony, Blair, 0]
+87KHibernate: create sequence hibernate_sequence start with 1 increment by 1
+87ÜHibernate: alter table Person add constraint FKhsilw37bohsue5exltut0wcpq foreign key (DRIVERS_LICENSE_ID) references DRIVERS_LICENSE
+8:¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8:¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8<¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8>–Hibernate: select person0_.id as id1_1_0_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_0_, person0_.first_name as first_na2_1_0_, person0_.last_name as last_nam3_1_0_ from Person person0_ where person0_.id=?
+8?3Hibernate: call next value for hibernate_sequence
+8?cHibernate: insert into Person (DRIVERS_LICENSE_ID, first_name, last_name, id) values (?, ?, ?, ?)
+8@¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8@¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8E¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8E¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8F¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8F¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8G¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+8HZ02:56:47.159 [Test worker] ERROR o.h.h.i.a.ErrorTracker - line 1:1: unexpected token: It
+8HZ02:56:47.166 [Test worker] ERROR o.h.h.i.a.ErrorTracker - line 1:1: unexpected token: It
+8H2antlr.NoViableAltException: unexpected token: It
+8HÜ	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:210) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8Hå	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:294) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8Hê	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8Hé	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8H	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8H~	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8Hå	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8Hü	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8Hû	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8Hâ	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+8HI	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source) ~[?:?]
+8Hj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+8HE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+8H™	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.0-M1.jar:?]
+8H?	at com.sun.proxy.$Proxy70.createQuery(Unknown Source) ~[?:?]
+8Hπ	at org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests.lambda$testBogusQuery$0(AbstractContainerEntityManagerFactoryIntegrationTests.java:97) ~[test/:?]
+8Ho	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:62) ~[assertj-core-3.16.1.jar:?]
+8Hs	at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:58) ~[assertj-core-3.16.1.jar:?]
+8H∞	at org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests.testBogusQuery(AbstractContainerEntityManagerFactoryIntegrationTests.java:96) ~[test/:?]
+8HP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+8Hb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+8Hj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+8HE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+8HÜ	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686) ~[junit-platform-commons-1.6.2.jar:1.6.2]
+8HÉ	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8H≠	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8HÜ	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hî	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hè	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8HÆ	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hé	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8HÆ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hó	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hû	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hñ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8HÖ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8HÑ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hß	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hû	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hï	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hî	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8HE	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_251]
+8Hƒ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8HE	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_251]
+8Hƒ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8H¡	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8H†	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8Hú	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+8HÉ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
+8Hå	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
+8Hë	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) [junit-platform-launcher-1.6.2.jar:1.6.2]
+8HÇ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) [junit-platform-launcher-1.6.2.jar:1.6.2]
+8HÇ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) [junit-platform-launcher-1.6.2.jar:1.6.2]
+8H‚	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) [gradle-testing-junit-platform-6.5.jar:6.5]
+8H◊	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) [gradle-testing-junit-platform-6.5.jar:6.5]
+8H≥	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) [gradle-testing-junit-platform-6.5.jar:6.5]
+8Hã	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) [gradle-testing-base-6.5.jar:6.5]
+8HP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+8Hb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+8Hj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+8HE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+8Hy	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-6.5.jar:6.5]
+8Hy	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-6.5.jar:6.5]
+8Hâ	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-6.5.jar:6.5]
+8Hò	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) [gradle-messaging-6.5.jar:6.5]
+8H6	at com.sun.proxy.$Proxy2.stop(Unknown Source) [?:?]
+8Hy	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133) [gradle-testing-base-6.5.jar:6.5]
+8HP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+8Hb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+8Hj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+8HE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+8Hy	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-6.5.jar:6.5]
+8Hy	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-6.5.jar:6.5]
+8H±	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) [gradle-messaging-6.5.jar:6.5]
+8H±	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) [gradle-messaging-6.5.jar:6.5]
+8Hx	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414) [gradle-messaging-6.5.jar:6.5]
+8Hè	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) [gradle-base-services-6.5.jar:6.5]
+8H~	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) [gradle-base-services-6.5.jar:6.5]
+8Hc	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
+8Hc	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
+8Hé	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) [gradle-base-services-6.5.jar:6.5]
+8H9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+8I3Hibernate: call next value for hibernate_sequence
+8IJHibernate: insert into DRIVERS_LICENSE (serial_number, id) values (?, ?)
+8IcHibernate: insert into Person (DRIVERS_LICENSE_ID, first_name, last_name, id) values (?, ?, ?, ?)
+8I–Hibernate: select person0_.id as id1_1_0_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_0_, person0_.first_name as first_na2_1_0_, person0_.last_name as last_nam3_1_0_ from Person person0_ where person0_.id=?
+8IóHibernate: select driverslic0_.id as id1_0_0_, driverslic0_.serial_number as serial_n2_0_0_ from DRIVERS_LICENSE driverslic0_ where driverslic0_.id=?
+ONÜHibernate: alter table Person add constraint FKhsilw37bohsue5exltut0wcpq foreign key (DRIVERS_LICENSE_ID) references DRIVERS_LICENSE
+OQ¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+OQ¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+OR¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+OT–Hibernate: select person0_.id as id1_1_0_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_0_, person0_.first_name as first_na2_1_0_, person0_.last_name as last_nam3_1_0_ from Person person0_ where person0_.id=?
+OU3Hibernate: call next value for hibernate_sequence
+OUcHibernate: insert into Person (DRIVERS_LICENSE_ID, first_name, last_name, id) values (?, ?, ?, ?)
+OV¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+OV¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+O[¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+O[¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+O\¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+O\¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+O]¥Hibernate: select person0_.id as id1_1_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_, person0_.first_name as first_na2_1_, person0_.last_name as last_nam3_1_ from Person person0_
+O^Z02:56:47.635 [Test worker] ERROR o.h.h.i.a.ErrorTracker - line 1:1: unexpected token: It
+O^Z02:56:47.635 [Test worker] ERROR o.h.h.i.a.ErrorTracker - line 1:1: unexpected token: It
+O^2antlr.NoViableAltException: unexpected token: It
+O^Ü	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:210) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^å	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:294) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^ê	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^é	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^~	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^å	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^ü	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^û	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^â	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+O^I	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source) ~[?:?]
+O^j	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+O^E	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+O^™	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.0-M1.jar:?]
+O^?	at com.sun.proxy.$Proxy70.createQuery(Unknown Source) ~[?:?]
+O^π	at org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests.lambda$testBogusQuery$0(AbstractContainerEntityManagerFactoryIntegrationTests.java:97) ~[test/:?]
+O^o	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:62) ~[assertj-core-3.16.1.jar:?]
+O^s	at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:58) ~[assertj-core-3.16.1.jar:?]
+O^∞	at org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests.testBogusQuery(AbstractContainerEntityManagerFactoryIntegrationTests.java:96) ~[test/:?]
+O^P	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+O^b	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+O^j	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+O^E	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+O^Ü	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686) ~[junit-platform-commons-1.6.2.jar:1.6.2]
+O^É	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^≠	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^Ü	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^î	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^è	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^Æ	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^é	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^Æ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^ó	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^û	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^ñ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^Ö	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^Ñ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^ß	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^û	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^ï	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^î	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^x	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^à	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^E	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_251]
+O^ƒ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^x	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^à	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^E	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_251]
+O^ƒ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^x	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^î	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^à	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^¡	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^†	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^ú	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+O^É	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
+O^å	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
+O^ë	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) [junit-platform-launcher-1.6.2.jar:1.6.2]
+O^Ç	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) [junit-platform-launcher-1.6.2.jar:1.6.2]
+O^Ç	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) [junit-platform-launcher-1.6.2.jar:1.6.2]
+O^‚	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) [gradle-testing-junit-platform-6.5.jar:6.5]
+O^◊	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) [gradle-testing-junit-platform-6.5.jar:6.5]
+O^≥	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) [gradle-testing-junit-platform-6.5.jar:6.5]
+O^ã	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) [gradle-testing-base-6.5.jar:6.5]
+O^P	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+O^b	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+O^j	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+O^E	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+O^y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-6.5.jar:6.5]
+O^y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-6.5.jar:6.5]
+O^â	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-6.5.jar:6.5]
+O^ò	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) [gradle-messaging-6.5.jar:6.5]
+O^6	at com.sun.proxy.$Proxy2.stop(Unknown Source) [?:?]
+O^y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133) [gradle-testing-base-6.5.jar:6.5]
+O^P	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+O^b	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+O^j	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+O^E	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+O^y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-6.5.jar:6.5]
+O^y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-6.5.jar:6.5]
+O^±	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) [gradle-messaging-6.5.jar:6.5]
+O^±	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) [gradle-messaging-6.5.jar:6.5]
+O^x	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414) [gradle-messaging-6.5.jar:6.5]
+O^è	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) [gradle-base-services-6.5.jar:6.5]
+O^~	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) [gradle-base-services-6.5.jar:6.5]
+O^c	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
+O^c	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
+O^é	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) [gradle-base-services-6.5.jar:6.5]
+O^9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+O_3Hibernate: call next value for hibernate_sequence
+O_JHibernate: insert into DRIVERS_LICENSE (serial_number, id) values (?, ?)
+O_cHibernate: insert into Person (DRIVERS_LICENSE_ID, first_name, last_name, id) values (?, ?, ?, ?)
+O_–Hibernate: select person0_.id as id1_1_0_, person0_.DRIVERS_LICENSE_ID as drivers_4_1_0_, person0_.first_name as first_na2_1_0_, person0_.last_name as last_nam3_1_0_ from Person person0_ where person0_.id=?
+O_óHibernate: select driverslic0_.id as id1_0_0_, driverslic0_.serial_number as serial_n2_0_0_ from DRIVERS_LICENSE driverslic0_ where driverslic0_.id=?
+crZ02:56:47.934 [Test worker] ERROR o.h.h.i.a.ErrorTracker - line 1:1: unexpected token: It
+crZ02:56:47.934 [Test worker] ERROR o.h.h.i.a.ErrorTracker - line 1:1: unexpected token: It
+cr2antlr.NoViableAltException: unexpected token: It
+crÜ	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:210) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+crå	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:294) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+crê	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+cré	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+cr	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+cr~	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+crå	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+crü	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+crû	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+crâ	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23) ~[hibernate-core-5.4.18.Final.jar:5.4.18.Final]
+crI	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source) ~[?:?]
+crj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+crE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+cr™	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.0-M1.jar:?]
+cr?	at com.sun.proxy.$Proxy74.createQuery(Unknown Source) ~[?:?]
+crπ	at org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests.lambda$testBogusQuery$0(AbstractContainerEntityManagerFactoryIntegrationTests.java:97) ~[test/:?]
+cro	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:62) ~[assertj-core-3.16.1.jar:?]
+crs	at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:58) ~[assertj-core-3.16.1.jar:?]
+cr∞	at org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests.testBogusQuery(AbstractContainerEntityManagerFactoryIntegrationTests.java:96) ~[test/:?]
+crP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+crb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+crj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+crE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+crÜ	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686) ~[junit-platform-commons-1.6.2.jar:1.6.2]
+crÉ	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+cr≠	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crÜ	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crî	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crè	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crÆ	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+cré	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crÆ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+cró	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crû	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crñ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crÖ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crÑ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crß	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crû	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crï	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crî	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crE	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_251]
+crƒ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crE	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_251]
+crƒ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+cr¡	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+cr†	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crú	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+crÉ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
+crå	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
+crë	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) [junit-platform-launcher-1.6.2.jar:1.6.2]
+crÇ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) [junit-platform-launcher-1.6.2.jar:1.6.2]
+crÇ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) [junit-platform-launcher-1.6.2.jar:1.6.2]
+cr‚	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) [gradle-testing-junit-platform-6.5.jar:6.5]
+cr◊	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) [gradle-testing-junit-platform-6.5.jar:6.5]
+cr≥	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) [gradle-testing-junit-platform-6.5.jar:6.5]
+crã	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) [gradle-testing-base-6.5.jar:6.5]
+crP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+crb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+crj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+crE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+cry	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-6.5.jar:6.5]
+cry	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-6.5.jar:6.5]
+crâ	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-6.5.jar:6.5]
+crò	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) [gradle-messaging-6.5.jar:6.5]
+cr6	at com.sun.proxy.$Proxy2.stop(Unknown Source) [?:?]
+cry	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133) [gradle-testing-base-6.5.jar:6.5]
+crP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+crb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
+crj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
+crE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
+cry	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-6.5.jar:6.5]
+cry	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-6.5.jar:6.5]
+cr±	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) [gradle-messaging-6.5.jar:6.5]
+cr±	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) [gradle-messaging-6.5.jar:6.5]
+crx	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414) [gradle-messaging-6.5.jar:6.5]
+crè	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) [gradle-base-services-6.5.jar:6.5]
+cr~	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) [gradle-base-services-6.5.jar:6.5]
+crc	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
+crc	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
+cré	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) [gradle-base-services-6.5.jar:6.5]
+cr9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+¨¥õ02:56:48.455 [Test worker] WARN  o.s.o.j.p.PersistenceUnitReader - Cannot resolve jar-file entry [order-*.jar] in persistence unit 'pu2' without root URL
+‹€ê[EL Info]: 2023-03-06 02:56:49.113--ServerSession(1429757379)--EclipseLink, version: Eclipse Persistence Services - 2.7.7.v20200504-69f2c2b80d
+‹€ó[EL Warning]: metadata: 2023-03-06 02:56:49.114--ServerSession(1429757379)--Reverting the lazy setting on the OneToOne or ManyToOne attribute [driversLicense] for the entity class [class org.springframework.orm.jpa.domain.Person] since weaving was not enabled or did not occur.
+‹€é[EL Fine]: sql: 2023-03-06 02:56:49.118--ServerSession(1429757379)--Connection(668336118)--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'

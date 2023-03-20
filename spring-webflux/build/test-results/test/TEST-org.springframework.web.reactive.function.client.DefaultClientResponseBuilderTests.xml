@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.client.DefaultClientResponseBuilderTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-06T08:17:20" hostname="DESKTOP-VGJP1PJ" time="0.102">
+  <properties/>
+  <testcase name="mutateWithCustomStatus()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseBuilderTests" time="0.014"/>
+  <testcase name="mutate()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseBuilderTests" time="0.079"/>
+  <testcase name="normal()" classname="org.springframework.web.reactive.function.client.DefaultClientResponseBuilderTests" time="0.006"/>
+  <system-out><![CDATA[03:17:20.310 [Test worker] DEBUG o.s.c.c.StringDecoder - my-prefixDecoded "foobar"
+03:17:20.321 [Test worker] DEBUG o.s.c.c.StringDecoder - Decoded "baz"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
